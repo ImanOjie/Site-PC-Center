@@ -4,9 +4,9 @@
 
 
 <div>
-    <img src="/shop_storage/carosual1.jpg" alt="" width="100%">
-    <img src="/shop_storage/carosual2.jpg" alt="" width="100%">
-    <img src="/shop_storage/carosual3.jpg" alt="" width="100%">
+    <img src="{{asset('/shop_storage/carosual1.jpg')}}" alt="" width="100%">
+    <img src="{{asset('/shop_storage/carosual2.jpg')}}" alt="" width="100%">
+    <img src="{{asset('/shop_storage/carosual3.jpg')}}" alt="" width="100%">
 </div>
 
 f;khnagkfgk;lag;la

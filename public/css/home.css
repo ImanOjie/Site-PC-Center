@@ -5,7 +5,10 @@ body{
     alignment: right;
     background-color: cornflowerblue;
     font-family: IRANSans;
+    color: #424242;
     height: 100%;
+    line-height: 27px;
+    font-size: 16px;
 }
 
 .row{
@@ -14,16 +17,13 @@ body{
 .nav{
 
     background-color: white ;
-    color: white;
     height: auto;
 }
 .item_nav1{
-    margin-top: 30px;
     border: none;
     background-color: unset;
 }
 .item_nav_link1{
-    margin-top: 20px;
     border: none;
     background-color: unset;
 }
