@@ -10,7 +10,7 @@
     <title>{{$page_title}}</title>
 </head>
 <body>
-
+<header class="container-fluid">
 {{--navbar 1--}}
 <div class="row nav1">
     <div class="col-2">
@@ -31,7 +31,7 @@
         <a href=""><button class="item_nav_link2">pc_center@gmail.com<img src="{{asset('/shop_storage/icon-email.png')}}" alt="icon-email" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
     </div>
 </div>
-
+</header>
 {{--navbar 2--}}
 <div class="row nav2">
     <div class="col-3">
@@ -56,16 +56,16 @@
     <div class="col-1">
         <button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button>
     </div>
-
-
-
 </div>
+
 
 
 
 @yield('home')
 
+<footer>
 
+</footer>
 
 
 <script src="{{asset('/js/jquery.js')}}"></script>
