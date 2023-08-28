@@ -1,6 +1,7 @@
 html{
     height: 100%;
 }
+
 body{
     alignment: right;
     background-color: white;
@@ -11,55 +12,62 @@ body{
     font-size: 16px;
     direction: rtl;
     margin: 0px;
-
 }
 
 .row{
     margin: 0px;
 }
+
 .nav1{
 
     background-color: white ;
     height: auto;
 }
+
 .item_nav1{
     border: none;
     background-color: unset;
 }
+
 .item_nav_link1{
     border: none;
     background-color: unset;
 }
+
 .item_nav_link2{
     border: none;
     background-color: unset;
 }
+
 .item_nav1:focus {
     border: none;
     outline: none;
 }
+
 .item_nav_link1:focus {
     border: none;
     outline: none;
 }
+
 .item_nav_link2:focus {
     border: none;
     outline: none;
 }
+
 .logo{
     margin: 10px;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 .nav2{
     text-align: right;
     height: 50px;
     background-color: #00B9F1;
-width: 100%;
-
-
+    width: 100%;
 }
+
 .dropbtn {
     background-color: #00B9F1;
     color: white;
@@ -104,6 +112,7 @@ width: 100%;
 .search-bar {
     margin-top: 5px;
 }
+
 .search-btn {
     border-color: #00B9F1;
     background-color: #424242;
@@ -111,17 +120,19 @@ width: 100%;
     border-radius: 20px 0px 0px 20px;
     padding: 2px 25px 0px 25px;
 }
+
 .form-control{
     border-radius: 0px 25px 25px 0px;
 }
-.login-btn{
-    display: block;
+
+.login-btn {
     color: white;
-    border: none;
+    border: unset;
     background-color: unset;
     margin: 10px auto 0px auto;
     font-size: 14px;
 }
+
 .basket-btn{
     border: #00B9F1;
     background-color: unset;

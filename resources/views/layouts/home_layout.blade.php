@@ -50,7 +50,7 @@
             <button class="btn search-btn" type="submit"><img src="{{asset('/shop_storage/icon-search.png')}}" alt="search-icon" width="20px"></button>
         </form>
     </div>
-    <div class="col-2">
+    <div class="col-2 text-center">
         <a href=""><button class="login-btn">ورود / ثبت نام</button></a>
     </div>
     <div class="col-1">
