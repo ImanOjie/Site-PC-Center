@@ -2,6 +2,7 @@
 
 @section('home')
 
+    {{--carousal--}}
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -33,6 +34,17 @@
         </a>
     </div>
 
+    {{--card--}}
 
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10 card-link">
+            <a href="" class="card"><img src="{{asset('/shop_storage/card-link1.webp')}}" alt="" width="130%" style="border-radius: 20px"></a>
+            <a href="" class="card"><img src="{{asset('/shop_storage/card-link2.webp')}}" alt="" width="130%" style="border-radius: 20px"></a>
+            <a href="" class="card"><img src="{{asset('/shop_storage/card-link3.webp')}}" alt="" width="130%" style="border-radius: 20px"></a>
+            <a href="" class="card"><img src="{{asset('/shop_storage/card-link4.webp')}}" alt="" width="130%" style="border-radius: 20px"></a>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
 
 @endsection
