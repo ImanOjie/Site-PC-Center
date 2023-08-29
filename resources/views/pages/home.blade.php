@@ -47,4 +47,12 @@
         <div class="col-md-1"></div>
     </div>
 
+    <div class="row big-card">
+        <div class="col-1"></div>
+        <div class="col-10">
+            <a href=""><img src="{{asset('/shop_storage/gif-card.gif')}}" alt="" width="100%"></a>
+        </div>
+        <div class="col-1"></div>
+    </div>
+
 @endsection
