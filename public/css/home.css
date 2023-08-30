@@ -74,7 +74,7 @@ body{
 .dropbtn {
     background-color: #00B9F1;
     color: white;
-    padding:14px 10px 10px 10px;
+    padding:11px 10px 10px 10px;
     font-size: 16px;
     border: none;
 }
@@ -122,15 +122,19 @@ body{
 }
 
 .search-btn {
+    color: white;
     border-color: #00B9F1;
     background-color: #424242;
     border-style: solid;
     border-radius: 20px 0px 0px 20px;
     padding: 2px 25px 0px 25px;
+    font-size: 12px;
 }
 
 .form-control{
     border-radius: 0px 25px 25px 0px;
+    font-size: 10px;
+    padding: 19px;
 }
 
 .login-btn {
@@ -170,4 +174,50 @@ body{
 /*big-card*/
 .big-card{
     padding: 60px 0px 60px 0px;
+}
+
+/*footer*/
+.nav-footer{
+    background-color: #00B9F1;
+    height: 50px;
+    color: white;
+    font-size: 13px;
+}
+.nav-footer-icon{
+    text-align: right;
+}
+.footer-form{
+    padding-top: 5px;
+    width: 70%;
+    float: left;
+}
+.footer{
+    width: 100%;
+    height: 420px;
+    color: #424242;
+    background-color: #e3e3e3;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+.footer2{
+    padding: 20px 0px 0px 0px;
+}
+.guidance-num{
+    text-align: right;
+    padding-top: 8px;
+}
+
+
+
+.footer-final{
+    font-weight: 400;
+    display: block;
+    color: white;
+    background-color: #B0B0B0;
+    font-size: 11px;
+    width: 100%;
+    height: 38px;
+    text-align:center;
+    padding-top: 5px;
 }
