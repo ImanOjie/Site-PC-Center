@@ -60,7 +60,7 @@
 
 
 @yield('home')
-
+{{--footer navbar1--}}
 <footer>
 <div class="row nav-footer">
     <div class="col-6 nav-footer-icon">
@@ -76,6 +76,7 @@
 </div>
 
     <div class="footer">
+        {{--footer logo--}}
         <div class="row footer1">
             <div class="col-3">
                 <a href="{{route('Home')}}">
@@ -84,20 +85,50 @@
             </div>
             <div class="col-9"></div>
         </div>
+        {{--footer call--}}
         <div class="row footer2">
             <div class="col-3">
                 <img src="{{asset('/shop_storage/guidance-icon.png')}}" alt="guidance-icon" width="40px">
                 <span>نیاز به راهنمایی و مشاوره دارید؟</span>
             </div>
-            <div class="col-2 guidance-num">
+            <div class="col-3 guidance-num">
                 <span>
                     09903989716-07137326589
                 </span>
             </div>
-            <div class="col-5"></div>
+            <div class="col-4"></div>
             <div class="col-2"></div>
         </div>
-        <div class="row footer3"></div>
+        <hr>
+        {{--footer info about pc center--}}
+        <div class="row ">
+            <div class="col-2 row-footer3">
+                <h3 class="footer3">خدمات مشتریان</h3>
+                <a href="" class="end-links">حساب من</a>
+                <a href="" class="end-links">پرسش های متداول</a>
+                <a href="" class="end-links">نظرسنجی</a>
+            </div>
+            <div class="col-2 row-footer3">
+                <h3 class="footer3">راهنمای خرید</h3>
+                <a href="" class="end-links">آموزش ثبت سفارش</a>
+                <a href="" class="end-links">قوانین و شرایط استفاده</a>
+                <a href="" class="end-links">نحوه ارسال</a>
+            </div>
+            <div class="col-2 row-footer3">
+                <h3 class="footer3">همراه پی سی سنتر</h3>
+                <a href="" class="end-links">تماس با ما</a>
+                <a href="" class="end-links">درباره ما</a>
+                <a href="" class="end-links">استخدام</a>
+            </div>
+            <div class="col-2 row-footer3">
+                <h3 class="footer3">خدمات پی سی سنتر</h3>
+                <a href="" class="end-links">اسمبل رایگان</a>
+                <a href="" class="end-links">سیستم های پیشنهادی</a>
+                <a href="" class="end-links">واریز به حساب</a>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
     </div>
     <div class="row footer-final">
         <span>تمامی حقوق این سایت متعلق به پی سی سنتر می باشد.</span>

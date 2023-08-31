@@ -202,14 +202,15 @@ body{
 
 .footer2{
     padding: 20px 0px 0px 0px;
+    text-align: center;
+    line-height: 23px;
+    font-size: 13px;
 }
 .guidance-num{
     text-align: right;
     padding-top: 8px;
+    font-size: 16px;
 }
-
-
-
 .footer-final{
     font-weight: 400;
     display: block;
@@ -220,4 +221,26 @@ body{
     height: 38px;
     text-align:center;
     padding-top: 5px;
+}
+.row-footer3{
+    padding: 30px 30px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+.footer3{
+    font-weight: bold;
+    font-family: IRANSans;
+    font-size: 14px;
+    text-align: right;
+    color: black;
+    margin-bottom: 30px;
+
+}
+.end-links{
+    display: block;
+    text-align: right;
+    text-decoration: none;
+    color: #424242;
+    margin: 0px 0px 10px 0px;
+    padding:0px;
+    font-size: 12px;
 }
