@@ -13,7 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/',[App\Http\Controllers\HomeController::class,'home'])->name('Home');
+//home
+Route::get('/',[App\Http\Controllers\HomeController::class,'home'])->name('home');
+
+//login/register
+Route::get('/login_register',[App\Http\Controllers\HomeController::class,'login_register'])->name('login_register');
 
 
 

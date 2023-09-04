@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/home.css')}}">
-    <link rel="stylesheet" href="{{asset('/css/login_register.css')}}">
     <link rel="icon" type="image/x-icon" href="{{asset('/shop_storage/pc-favicon.png')}}">
     <title>{{$page_title}}</title>
 </head>
@@ -14,7 +13,7 @@
 {{--navbar 1--}}
 <div class="row nav1">
     <div class="col-2">
-        <a href="{{route('Home')}}"><img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="130px" class="logo"></a>
+        <a href="{{route('home')}}"><img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="130px" class="logo"></a>
     </div>
 
     <div class="col-5">
@@ -22,7 +21,7 @@
         <a href=""><button class="item_nav1">درباره ما</button></a>
         <a href=""><button class="item_nav1">تماس با ما</button></a>
         <a href=""><button class="item_nav1">سوالات متداول</button></a>
-        <a href="{{route('Home')}}"><button href="{{route('Home')}}" class="item_nav1" onclick="click()">صفحه اصلی</button></a>
+        <a href="{{route('home')}}"><button href="{{route('home')}}" class="item_nav1" onclick="click()">صفحه اصلی</button></a>
     </div>
     <div class="col-5">
         <div class="row" style="height: 20px"></div>
@@ -51,7 +50,7 @@
         </form>
     </div>
     <div class="col-2 text-center">
-        <a href=""><button class="login-btn">ورود / ثبت نام</button></a>
+        <a href="{{route('login_register')}}"><button class="login-btn">ورود / ثبت نام</button></a>
     </div>
     <div class="col-1">
         <button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button>
@@ -79,7 +78,7 @@
         {{--footer logo--}}
         <div class="row footer1">
             <div class="col-3">
-                <a href="{{route('Home')}}">
+                <a href="{{route('home')}}">
                     <img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="150px" class="logo footer-logo">
                 </a>
             </div>

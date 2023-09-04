@@ -10,4 +10,8 @@ class HomeController extends Controller
         $page_title='صفحه اصلی';
         return view('/pages/home', compact('page_title'));
     }
+    public function login_register(){
+        $page_title='ورود / ثبت نام';
+        return view('/pages/login_register', compact('page_title'));
+    }
 }

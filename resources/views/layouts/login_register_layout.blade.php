@@ -5,12 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{asset('/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/login_register.css')}}">
+    <link rel="icon" type="image/x-icon" href="{{asset('/shop_storage/pc-favicon.png')}}">
     <title>{{$page_title}}</title>
 </head>
 <body>
 
 
-@yield('login_register')
+
+
+<div>
+    @yield('login_register')
+</div>
+
 
 <script src="{{asset('/js/jquery.js')}}"></script>
 <script src="{{asset('/js/propper.js')}}"></script>
