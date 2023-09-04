@@ -9,7 +9,7 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 50px;
+
 }
 
 * {
@@ -25,7 +25,7 @@ h2 {
     text-align: center;
 }
 
-p {
+h3 {
     color: white;
     text-align: center;
     font-size: 14px;
@@ -51,7 +51,7 @@ button {
     border: 1px solid #BAFF39;
     background-color: #BAFF39;
     color: black;
-    font-size: 12px;
+    font-size: 20px;
     font-weight: bold;
     padding: 12px 45px;
     letter-spacing: 1px;
@@ -66,8 +66,12 @@ button:active {
 button:focus {
     outline: none;
 }
+input:focus {
+     outline: none;
+ }
 
 button.ghost {
+    font-size: 20px;
     background-color: #BAFF39;
     border-color: #BAFF39;
 }
@@ -84,6 +88,7 @@ form {
 }
 
 input {
+    text-align: right;
     border-radius: 8px;
     background-color: #eee;
     border: none;
@@ -93,14 +98,16 @@ input {
 }
 
 .container {
+    display: block;
+    position: center;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 768px;
+    width: 880px;
     max-width: 100%;
-    min-height: 480px;
+    min-height: 550px;
 }
 
 .form-container {
