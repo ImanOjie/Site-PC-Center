@@ -139,8 +139,9 @@ body{
 }
 
 .login-btn {
+    text-decoration: none;
     color: white;
-    border: unset;
+    border: none;
     background-color: unset;
     margin: 10px auto 0px auto;
     font-size: 14px;
@@ -155,7 +156,10 @@ body{
     background-color: unset;
     float: left;
 }
-
+.basket-btn:focus{
+    border: none;
+    outline: none;
+}
 /*cards*/
 .card-link{
     position: relative;
@@ -247,20 +251,20 @@ body{
 }
 .login-div{
     color: white;
-    text-align: center;
     margin: 0;
-    padding: 10px ;
+    padding: 0px ;
 
 }
 .logout_btn{
     color: white;
-    text-align: center;
     border: none;
-    margin: 0;
-    padding: 0px 10px 0px 0px;
     background-color: unset;
+    padding: 12px 50px 0px 0px;
 }
 .logout_btn:focus{
     border: none;
     outline: none;
+}
+.login-name{
+    padding: 12px 40px 0px 0px;
 }

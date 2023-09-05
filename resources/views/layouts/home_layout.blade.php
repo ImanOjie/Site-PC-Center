@@ -51,22 +51,22 @@
     </div>
     <div class="col-2 text-center">
 
-        @auth()
             <div class="row login-div">
-                <span>{{auth()->user()->name}}</span>
+                @auth()
+                <span class="login-name">{{auth()->user()->name}}</span>
+
                 <form action="{{route('logout')}}" method="post">
                     @csrf
                     <button class="logout_btn">خروج از حساب</button>
                 </form>
                 @endauth
-
-                @guest()
-                    <a href="{{route('login_register')}}"><button class="login-btn">ورود / ثبت نام</button></a>
-                @endguest
             </div>
-
+                @guest()
+                    <a href="{{route('login_register')}}"><button class="login-btn align-content-center">ورود / ثبت نام</button></a>
+                @endguest
 
     </div>
+
     <div class="col-1">
         <button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button>
     </div>
