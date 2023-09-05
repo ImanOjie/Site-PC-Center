@@ -68,7 +68,7 @@
     </div>
 
     <div class="col-1">
-        <button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button>
+        <a href="{{route('purchases')}}"><button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button></a>
     </div>
 </div>
 
