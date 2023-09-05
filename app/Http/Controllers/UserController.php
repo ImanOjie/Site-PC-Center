@@ -9,6 +9,10 @@ use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
 {
+    public function __construct()
+    {   $this->middleware('auth');
+    }
+
     public function register(Request $request){
         $request -> validate([
             'name' => 'required',
