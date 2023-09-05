@@ -4,10 +4,10 @@
 
     <div class="container" id="container">
         <div class="form-container sign-up-container">
-            {{--@if(session()->has('save_ok_shod'))
+            @if(session()->has('save_ok_shod'))
                     {{session()->get('save_ok_shod')}}
-                @endif--}}
-            <form action="#" method="post">
+                @endif
+            <form action="{{route('register')}}" method="post">
                 @csrf
                 <h1>ثبت نام</h1>
 
