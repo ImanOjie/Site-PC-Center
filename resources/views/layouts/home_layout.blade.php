@@ -10,7 +10,7 @@
 </head>
 <body>
 <header class="container-fluid">
-{{--navbar 1--}}
+{{--header navbar 1--}}
 <div class="row nav1">
     <div class="col-2">
         <a href="{{route('home')}}"><img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="130px" class="logo"></a>
@@ -31,7 +31,7 @@
     </div>
 </div>
 </header>
-{{--navbar 2--}}
+{{--header navbar 2--}}
 <div class="row nav2">
     <div class="col-3">
         <div class="dropdown">
@@ -50,15 +50,30 @@
         </form>
     </div>
     <div class="col-2 text-center">
-        <a href="{{route('login_register')}}"><button class="login-btn">ورود / ثبت نام</button></a>
+
+        @auth()
+            <div class="row login-div">
+                <span>{{auth()->user()->name}}</span>
+                <form action="{{route('logout')}}" method="post">
+                    @csrf
+                    <button class="logout_btn">خروج از حساب</button>
+                </form>
+                @endauth
+
+                @guest()
+                    <a href="{{route('login_register')}}"><button class="login-btn">ورود / ثبت نام</button></a>
+                @endguest
+            </div>
+
+
     </div>
     <div class="col-1">
         <button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button>
     </div>
 </div>
 
-
 @yield('home')
+
 {{--footer navbar1--}}
 <footer>
 <div class="row nav-footer">
@@ -75,6 +90,7 @@
 </div>
 
     <div class="footer">
+
         {{--footer logo--}}
         <div class="row footer1">
             <div class="col-3">
@@ -84,6 +100,7 @@
             </div>
             <div class="col-9"></div>
         </div>
+
         {{--footer call--}}
         <div class="row footer2">
             <div class="col-3">
@@ -99,6 +116,7 @@
             <div class="col-2"></div>
         </div>
         <hr>
+
         {{--footer info about pc center--}}
         <div class="row ">
             <div class="col-2 row-footer3">

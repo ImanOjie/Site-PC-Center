@@ -245,3 +245,22 @@ body{
     padding:0px;
     font-size: 12px;
 }
+.login-div{
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 10px ;
+
+}
+.logout_btn{
+    color: white;
+    text-align: center;
+    border: none;
+    margin: 0;
+    padding: 0px 10px 0px 0px;
+    background-color: unset;
+}
+.logout_btn:focus{
+    border: none;
+    outline: none;
+}
