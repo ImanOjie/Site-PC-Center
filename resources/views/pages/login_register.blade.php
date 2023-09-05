@@ -30,13 +30,13 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#" method="post">
+            <form action="{{route('login')}}" method="post">
                 @csrf
                 <h1>ورود</h1>
 
-                <input type="text" placeholder="نام" />
+                <input type="text" name="name" placeholder="نام" />
 
-                <input type="password" placeholder="رمز ورود" />
+                <input type="text"name="password" placeholder="رمز ورود" />
 
                 <button>ورود</button>
             </form>

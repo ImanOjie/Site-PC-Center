@@ -18,8 +18,8 @@ Route::get('/',[App\Http\Controllers\HomeController::class,'home'])->name('home'
 
 //login/register
 Route::get('/login_register',[App\Http\Controllers\HomeController::class,'login_register'])->name('login_register');
-
-Route::post('/register',[App\Http\Controllers\HomeController::class,'register'])->name('register');
+Route::post('/register',[App\Http\Controllers\HomeController::class,'register'])->name('register')->name('register');
+Route::post('/login',[App\Http\Controllers\HomeController::class,'login'])->name('login')->name('login');
 
 
 

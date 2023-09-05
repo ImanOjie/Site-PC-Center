@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use function Laravel\Prompts\password;
 
 class HomeController extends Controller
 {
@@ -12,6 +14,7 @@ class HomeController extends Controller
         $page_title='صفحه اصلی';
         return view('/pages/home', compact('page_title'));
     }
+
     public function login_register(){
         $page_title='ورود / ثبت نام';
         return view('/pages/login_register', compact('page_title'));
@@ -21,7 +24,7 @@ class HomeController extends Controller
         $request -> validate([
             'name' => 'required',
             'email' => 'required',
-            'password' => 'required',
+            'password' => 'required|min:4',
         ]);
         $user = new User();
         $user -> name = $request -> get('name');
@@ -29,5 +32,13 @@ class HomeController extends Controller
         $user -> password = Hash::make($request -> get('password'));
         $user -> save();
         return redirect()->route('login_register')->with(['save_ok_shod'=>'ثبت نام با موفقیت انجام شد']);
+    }
+
+    public function login(Request $request){
+        $user = User::where( "name" , $request->get('name'))->first();
+        $pass = $request -> get('password');
+        if ( Hash::check($pass,$user->password))
+            Auth::login($user);
+        return redirect()->route('home');
     }
 }
