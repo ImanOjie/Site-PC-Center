@@ -36,7 +36,7 @@
 
                 <input type="text" name="name" placeholder="نام" />
 
-                <input type="text"name="password" placeholder="رمز ورود" />
+                <input type="text" name="password"  placeholder="رمز ورود" />
 
                 <button>ورود</button>
             </form>

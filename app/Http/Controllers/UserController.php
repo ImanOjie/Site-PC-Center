@@ -3,15 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use http\Env\Response;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
+use function Laravel\Prompts\alert;
 
 class UserController extends Controller
 {
-    public function __construct()
-    {   $this->middleware('auth');
-    }
 
     public function register(Request $request){
         $request -> validate([
@@ -28,10 +27,57 @@ class UserController extends Controller
     }
 
     public function login(Request $request){
-        $user = User::where( "name" , $request->get('name'))->first();
-        $pass = $request -> get('password');
-        if ( Hash::check($pass,$user->password))
-            Auth::login($user);
+
+        $name = $request->input('name');
+        $password = $request->input('password');
+
+        $user = User::where('name', '=', $name)->first();
+        if (!$user) {
+            return response()->json(['نام کاربری اشتباه است']);
+        }
+        if (!Hash::check($password, $user->password)) {
+            return response()->json(['رمز عبور اشتباه است']);
+        }
+        Auth::login($user);
         return redirect()->route('home');
     }
+
+
+
+
+
+
+
+
+
+
+
+        /*$name = $request->input('name');
+        $user = User::where( "name" , $request->get('name'))->first();
+        $pass = $request -> get('password');
+        if ( !Hash::check($pass,$user->password)){
+            return response()->json('نام کاربری یا رمز ورود اشتباه است');
+        }
+        else {
+            Auth::login($user);
+            return redirect()->route('home');
+        }*/
+
+        /*$name = $request->input('name');
+        $password = $request->input('password');
+
+        $username = $request->get('name');
+        $userpass = Hash::check($request->get('password'));
+
+        if (($userpass == $password) && ($userpass == $name)){
+            return response()->json(['ok']);
+        } else {
+            return response()->json(['nokey']);
+        }*/
+
+
+
+
+
+
 }
