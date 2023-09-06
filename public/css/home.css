@@ -154,9 +154,11 @@ body{
 }
 
 .basket-btn{
+    margin: 0;
+    padding: 0;
     border: #00B9F1;
     background-color: unset;
-    float: left;
+
 }
 .basket-btn:focus{
     border: none;
@@ -261,12 +263,12 @@ body{
     color: white;
     border: none;
     background-color: unset;
-    padding: 12px 50px 0px 0px;
+    padding: 12px 10px 0px 0px;
 }
 .logout_btn:focus{
     border: none;
     outline: none;
 }
 .login-name{
-    padding: 12px 10px 0px 0px;
+    padding: 12px 5px 0px 0px;
 }

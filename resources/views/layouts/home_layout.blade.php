@@ -33,7 +33,7 @@
 </header>
 {{--header navbar 2--}}
 <div class="row nav2">
-    <div class="col-3">
+    <div class="col-2">
         <div class="dropdown">
             <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
             <div class="dropdown-content">
@@ -52,7 +52,7 @@
             <button class="btn search-btn" type="submit"><img src="{{asset('/shop_storage/icon-search.png')}}" alt="search-icon" width="20px"></button>
         </form>
     </div>
-    <div class="col-2 text-center">
+    <div class="col-3">
 
             <div class="row login-div">
                 @auth()
@@ -67,12 +67,12 @@
                 @guest()
                     <a href="{{route('login_register')}}"><button class="login-btn align-content-center">ورود / ثبت نام</button></a>
                 @endguest
-
+    </div>
+    <div class="col-1 text-center m-0 ">
+            <a href="{{route('purchases')}}"><button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button></a>
     </div>
 
-    <div class="col-1">
-        <a href="{{route('purchases')}}"><button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button></a>
-    </div>
+
 </div>
 
 @yield('home')
