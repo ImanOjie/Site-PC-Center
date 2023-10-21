@@ -151,7 +151,7 @@
 
     </div>
     <div class="row footer-final">
-        <span>تمامی حقوق این سایت متعلق به پی سی سنتر می باشد.</span>
+        <span>این سایت فقط جهت نمونه کار می باشد</span>
     </div>
 
 </footer>
