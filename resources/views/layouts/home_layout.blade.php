@@ -37,7 +37,7 @@
         <div class="dropdown">
             <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
             <div class="dropdown-content">
-                <a href="#" class="p-2 pr-3">قطعات کامپیوتر و لوازم جانبی</a>
+                <a href="#" class="p-2 pr-3">قطعات کامپیوتر و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow"></a>
                 <hr>
                 <a href="#" class="p-2 pr-3">لپ تاپ و لوازم جانبی</a>
                 <hr>
@@ -117,7 +117,7 @@
             </div>
             <div class="col-3 guidance-num">
                 <span>
-                    09903989716-07137326589
+                    09903989716
                 </span>
             </div>
             <div class="col-4"></div>

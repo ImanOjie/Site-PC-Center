@@ -3,6 +3,7 @@
 @section('home')
 
 
+    <h1>sabad kharid</h1>
 
 
 @endsection
