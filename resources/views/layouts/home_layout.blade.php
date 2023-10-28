@@ -37,12 +37,17 @@
         <div class="dropdown">
             <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
             <div class="dropdown-content">
-                <a href="#">قطعات کامپیوتر و لوازم جانبی</a>
-                <a href="#">لپ تاپ و لوازم جانبی</a>
-                <a href="#">کامپیوتر های آماده</a>
-                <a href="#">ماشین های اداری</a>
-                <a href="#">تجهیزات شبکه</a>
-                <a href="#">گوشی موبایل و لوازم جانبی</a>
+                <a href="#" class="p-2 pr-3">قطعات کامپیوتر و لوازم جانبی</a>
+                <hr>
+                <a href="#" class="p-2 pr-3">لپ تاپ و لوازم جانبی</a>
+                <hr>
+                <a href="#" class="p-2 pr-3">کامپیوتر های آماده</a>
+                <hr>
+                <a href="#" class="p-2 pr-3">ماشین های اداری</a>
+                <hr>
+                <a href="#" class="p-2 pr-3">تجهیزات شبکه</a>
+                <hr>
+                <a href="#" class="p-2 pr-3">گوشی موبایل و لوازم جانبی</a>
             </div>
         </div>
     </div>
