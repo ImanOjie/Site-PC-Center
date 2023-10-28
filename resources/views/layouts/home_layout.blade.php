@@ -18,14 +18,14 @@
 
     <div class="col-5">
         <div class="row" style="height: 30px"></div>
-        <a href=""><button class="item_nav1">درباره ما</button></a>
-        <a href=""><button class="item_nav1">تماس با ما</button></a>
-        <a href=""><button class="item_nav1">سوالات متداول</button></a>
         <a href="{{route('home')}}"><button href="{{route('home')}}" class="item_nav1" onclick="click()">صفحه اصلی</button></a>
+        <a href=""><button class="item_nav1">سوالات متداول</button></a>
+        <a href=""><button class="item_nav1">تماس با ما</button></a>
+        <a href=""><button class="item_nav1">درباره ما</button></a>
     </div>
     <div class="col-5">
         <div class="row" style="height: 20px"></div>
-        <a href=""><button class="item_nav_link1">(+98)9903989716<img src="{{asset('/shop_storage/icon-call.png')}}" alt="icon-call" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
+        <a href=""><button class="item_nav_link1">9903989716(+98)<img src="{{asset('/shop_storage/icon-call.png')}}" alt="icon-call" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
         <br>
         <a href=""><button class="item_nav_link2">pc_center@gmail.com<img src="{{asset('/shop_storage/icon-email.png')}}" alt="icon-email" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
     </div>
