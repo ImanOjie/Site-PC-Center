@@ -37,17 +37,27 @@
         <div class="dropdown">
             <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
             <div class="dropdown-content">
-                <a href="#" class="p-2 pr-3">قطعات کامپیوتر و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow"></a>
+
+                <a href="#" class="item-menubar">قطعات کامپیوتر و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
+
+
+                <div class="dropdown-submenu">
+                    <a href="#">1 dropdown</a>
+                    <hr>
+                    <a href="#">2 dropdown</a>
+                </div>
+
+
                 <hr>
-                <a href="#" class="p-2 pr-3">لپ تاپ و لوازم جانبی</a>
+                <a href="#" class="p-2 pr-3">لپ تاپ و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
                 <hr>
-                <a href="#" class="p-2 pr-3">کامپیوتر های آماده</a>
+                <a href="#" class="p-2 pr-3">کامپیوتر های آماده<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
                 <hr>
-                <a href="#" class="p-2 pr-3">ماشین های اداری</a>
+                <a href="#" class="p-2 pr-3">ماشین های اداری<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
                 <hr>
-                <a href="#" class="p-2 pr-3">تجهیزات شبکه</a>
+                <a href="#" class="p-2 pr-3">تجهیزات شبکه<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
                 <hr>
-                <a href="#" class="p-2 pr-3">گوشی موبایل و لوازم جانبی</a>
+                <a href="#" class="p-2 pr-3">گوشی موبایل و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
             </div>
         </div>
     </div>
