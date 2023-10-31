@@ -42,7 +42,7 @@
                     <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
                     <menu>
                         <menuitem>
-                            <a href="" class="menuitem">قطعات کامپیوتر و لوازم جانبی</a>
+                            <a class="menuitem">قطعات کامپیوتر و لوازم جانبی</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
                                 <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
@@ -51,7 +51,7 @@
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a href="" class="menuitem">لپ تاپ و لوازم جانبی</a>
+                            <a class="menuitem">لپ تاپ و لوازم جانبی</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
                                 <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
@@ -60,7 +60,7 @@
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a href="" class="menuitem">کامپیوتر های آماده</a>
+                            <a class="menuitem">کامپیوتر های آماده</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
                                 <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
@@ -69,7 +69,7 @@
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a href="" class="menuitem">ماشین های اداری</a>
+                            <a class="menuitem">ماشین های اداری</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
                                 <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
@@ -78,7 +78,7 @@
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a href="" class="menuitem">تجهیزات شبکه</a>
+                            <a class="menuitem">تجهیزات شبکه</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
                                 <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
@@ -87,7 +87,7 @@
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a href="" class="menuitem">گوشی موبایل و لوازم جانبی</a>
+                            <a class="menuitem">گوشی موبایل و لوازم جانبی</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
                                 <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
