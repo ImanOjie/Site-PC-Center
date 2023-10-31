@@ -44,57 +44,43 @@
                         <menuitem>
                             <a class="menuitem">قطعات کامپیوتر و لوازم جانبی</a>
                             <menu>
-                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">مادربرد</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">کارت گرافیک</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">حافظه رم</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">مانیتور</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">حافظه SSD</a></menuitem>
                             </menu>
                         </menuitem>
                         <menuitem>
                             <a class="menuitem">لپ تاپ و لوازم جانبی</a>
                             <menu>
-                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                                <menuitem><a href="" class="menuitem">ایسوس ASUS</a></menuitem>
+                                <menuitem><a href="" class="menuitem">لنوو LENOVO</a></menuitem>
+                                <menuitem><a href="" class="menuitem">ام اس آی MSI</a></menuitem>
+                                <menuitem><a href="" class="menuitem">ایسر ACER</a></menuitem>
+                                <menuitem><a href="" class="menuitem">اچ پی HP</a></menuitem>
                             </menu>
                         </menuitem>
                         <menuitem>
                             <a class="menuitem">کامپیوتر های آماده</a>
                             <menu>
-                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep2">ALL IN ONE</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep2">GAMING PC</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep2">MINI PC</a></menuitem>
+
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a class="menuitem">ماشین های اداری</a>
+                            <a class="menuitem">دستگاه های سبستم اداری</a>
                             <menu>
-                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep3">SCANNER</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep3">PRINTER</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep3">پروژکتور</a></menuitem>
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a class="menuitem">تجهیزات شبکه</a>
-                            <menu>
-                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
-                            </menu>
-                        </menuitem>
-                        <menuitem>
-                            <a class="menuitem">گوشی موبایل و لوازم جانبی</a>
-                            <menu>
-                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
-                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
-                            </menu>
-                        </menuitem>
+
                     </menu>
                 </menuitem>
             </menu>
