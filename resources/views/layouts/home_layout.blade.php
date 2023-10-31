@@ -42,25 +42,57 @@
                     <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
                     <menu>
                         <menuitem>
-                            <a>settings</a>
+                            <a href="" class="menuitem">قطعات کامپیوتر و لوازم جانبی</a>
                             <menu>
-                                <menuitem><a>Test 1</a></menuitem>
-                                <menuitem><a>Test 2</a></menuitem>
-                                <menuitem><a>Test 3</a></menuitem>
-                                <menuitem><a>Test 4</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
                             </menu>
                         </menuitem>
-                        <menuitem id="demo2">
-                            <a>more</a>
+                        <menuitem>
+                            <a href="" class="menuitem">لپ تاپ و لوازم جانبی</a>
                             <menu>
-                                <menuitem id="demo3">
-                                    <a>deeper</a>
-                                    <menu>
-                                        <menuitem><a>deep 1</a></menuitem>
-                                        <menuitem><a>deep 2</a></menuitem>
-                                        <menuitem><a>deep 3</a></menuitem>
-                                    </menu>
-                                </menuitem>
+                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                            </menu>
+                        </menuitem>
+                        <menuitem>
+                            <a href="" class="menuitem">کامپیوتر های آماده</a>
+                            <menu>
+                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                            </menu>
+                        </menuitem>
+                        <menuitem>
+                            <a href="" class="menuitem">ماشین های اداری</a>
+                            <menu>
+                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                            </menu>
+                        </menuitem>
+                        <menuitem>
+                            <a href="" class="menuitem">تجهیزات شبکه</a>
+                            <menu>
+                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
+                            </menu>
+                        </menuitem>
+                        <menuitem>
+                            <a href="" class="menuitem">گوشی موبایل و لوازم جانبی</a>
+                            <menu>
+                                <menuitem><a href="" class="menuitem">Test 1</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 2</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 3</a></menuitem>
+                                <menuitem><a href="" class="menuitem">Test 4</a></menuitem>
                             </menu>
                         </menuitem>
                     </menu>
