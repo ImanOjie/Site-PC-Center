@@ -12,11 +12,7 @@ $(document).ready(function(){
 
 //
 
-    /*$('.item-menubar').hover(function(e){
-        $(this).next('dropdown-submenu').hover();
-        e.stopPropagation();
-        e.preventDefault();
-    });*/
+
 
 
 

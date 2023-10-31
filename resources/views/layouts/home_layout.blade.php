@@ -31,37 +31,47 @@
     </div>
 </div>
 </header>
+
 {{--header navbar 2--}}
 <div class="row nav2">
-    <div class="col-2">
-        <div class="dropdown">
-            <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
-            <div class="dropdown-content">
+    <div class="col-3">
 
-                <a href="#" class="item-menubar">قطعات کامپیوتر و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
+        <nav>
+            <menu>
+                <menuitem id="demo1">
+                    <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
+                    <menu>
+                        <menuitem>
+                            <a>settings</a>
+                            <menu>
+                                <menuitem><a>Test 1</a></menuitem>
+                                <menuitem><a>Test 2</a></menuitem>
+                                <menuitem><a>Test 3</a></menuitem>
+                                <menuitem><a>Test 4</a></menuitem>
+                            </menu>
+                        </menuitem>
+                        <menuitem id="demo2">
+                            <a>more</a>
+                            <menu>
+                                <menuitem id="demo3">
+                                    <a>deeper</a>
+                                    <menu>
+                                        <menuitem><a>deep 1</a></menuitem>
+                                        <menuitem><a>deep 2</a></menuitem>
+                                        <menuitem><a>deep 3</a></menuitem>
+                                    </menu>
+                                </menuitem>
+                            </menu>
+                        </menuitem>
+                    </menu>
+                </menuitem>
+            </menu>
+        </nav>
 
 
-                <div class="dropdown-submenu">
-                    <a href="#">1 dropdown</a>
-                    <hr>
-                    <a href="#">2 dropdown</a>
-                </div>
 
-
-                <hr>
-                <a href="#" class="p-2 pr-3">لپ تاپ و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
-                <hr>
-                <a href="#" class="p-2 pr-3">کامپیوتر های آماده<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
-                <hr>
-                <a href="#" class="p-2 pr-3">ماشین های اداری<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
-                <hr>
-                <a href="#" class="p-2 pr-3">تجهیزات شبکه<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
-                <hr>
-                <a href="#" class="p-2 pr-3">گوشی موبایل و لوازم جانبی<img src="/shop_storage/arrow.png" alt="arrow" class="arrow-menu"></a>
-            </div>
-        </div>
     </div>
-    <div class="col-6">
+    <div class="col-5">
         <form class="d-flex search-bar" role="search">
             <input class="form-control me-2 " type="search"  aria-label="Search">
             <button class="btn search-btn" type="submit"><img src="{{asset('/shop_storage/icon-search.png')}}" alt="search-icon" width="20px"></button>
@@ -90,6 +100,9 @@
 
 </div>
 
+
+
+
 @yield('home')
 
 {{--footer navbar1--}}
@@ -106,6 +119,16 @@
         </form>
     </div>
 </div>
+
+
+
+
+
+
+
+
+
+
 
     <div class="footer">
 
