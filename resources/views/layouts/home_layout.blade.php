@@ -48,7 +48,7 @@
                                 <menuitem><a href="" class="menuitem deep1">کارت گرافیک</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">حافظه رم</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep1">مانیتور</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">فن خنک کننده</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">حافظه SSD</a></menuitem>
                             </menu>
                         </menuitem>
@@ -72,7 +72,7 @@
                             </menu>
                         </menuitem>
                         <menuitem>
-                            <a class="menuitem">دستگاه های سبستم اداری</a>
+                            <a class="menuitem">دستگاه های سیستم اداری</a>
                             <menu>
                                 <menuitem><a href="" class="menuitem deep3">SCANNER</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep3">PRINTER</a></menuitem>

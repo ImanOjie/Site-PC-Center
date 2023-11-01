@@ -27,6 +27,8 @@ body * {
 .item_nav1{
     border: none;
     background-color: unset;
+    padding-left: 30px;
+    font-size: 15px;
 }
 
 .item_nav_link1{
@@ -327,7 +329,7 @@ nav menuitem > menu {
 }
 
 .deep1{
-    margin-right: 10px;
+    margin-right: 2px;
 }
 .deep2{
     margin-right: 10px;
