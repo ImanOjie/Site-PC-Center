@@ -25,5 +25,16 @@ class HomeController extends Controller
         return view('/pages/purchases', compact('page_title'));
     }
 
-
+    public function motherboard(){
+        $page_title='مادربرد';
+        return view('/pages/menu/motherboard', compact('page_title'));
+    }
+    public function graphic(){
+        $page_title='گرافیک';
+        return view('/pages/menu/graphic', compact('page_title'));
+    }
+    public function cpu(){
+        $page_title='پردازنده';
+        return view('/pages/menu/cpu', compact('page_title'));
+    }
 }
