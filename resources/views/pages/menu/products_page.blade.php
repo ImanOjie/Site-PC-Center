@@ -2,8 +2,10 @@
 
 @section('home')
 
+    <div class="text-center">
+        <h1>this is product page</h1>
+    </div>
 
-    <h1>motherboard</h1>
 
 
 @endsection

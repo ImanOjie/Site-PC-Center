@@ -24,8 +24,9 @@ Route::get('/login_register',[App\Http\Controllers\HomeController::class,'login_
 Route::post('/register',[App\Http\Controllers\UserController::class,'register'])->name('register');
 Route::post('/login',[App\Http\Controllers\UserController::class,'login'])->name('login');
 
-//menu
+//products menu
 Route::get('/motherboard',[App\Http\Controllers\HomeController::class,'motherboard'])->name('motherboard');
+Route::get('/graphic',[App\Http\Controllers\HomeController::class,'graphic'])->name('graphic');
 
 
 

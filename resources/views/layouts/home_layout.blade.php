@@ -45,7 +45,7 @@
                             <a class="menuitem">قطعات کامپیوتر و لوازم جانبی</a>
                             <menu>
                                 <menuitem><a href="{{route('motherboard')}}" class="menuitem deep1">مادربرد</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep1">کارت گرافیک</a></menuitem>
+                                <menuitem><a href="{{route('graphic')}}" class="menuitem deep1">کارت گرافیک</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">حافظه رم</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">فن خنک کننده</a></menuitem>
