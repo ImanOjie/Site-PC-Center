@@ -24,10 +24,17 @@ Route::get('/login_register',[App\Http\Controllers\HomeController::class,'login_
 Route::post('/register',[App\Http\Controllers\UserController::class,'register'])->name('register');
 Route::post('/login',[App\Http\Controllers\UserController::class,'login'])->name('login');
 
+<<<<<<< HEAD
 //products menu
 Route::get('/motherboard',[App\Http\Controllers\HomeController::class,'motherboard'])->name('motherboard');
 Route::get('/graphic',[App\Http\Controllers\HomeController::class,'graphic'])->name('graphic');
 
+=======
+//menu
+Route::get('/motherboard',[App\Http\Controllers\HomeController::class,'motherboard'])->name('motherboard');
+Route::get('/graphic',[App\Http\Controllers\HomeController::class,'graphic'])->name('graphic');
+Route::get('/cpu',[App\Http\Controllers\HomeController::class,'cpu'])->name('cpu');
+>>>>>>> 482ace1e05e366ec0323b3ea27de0a134867815c
 
 
 
