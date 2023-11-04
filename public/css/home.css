@@ -439,6 +439,7 @@ menuitem > menu > menuitem.hover > menu > menuitem{
     width: 70%;
     border-radius: 20px;
     border: none;
+    outline: none;
     background-color: green;
     color: #fff;
     font-size: 1.2rem;
@@ -479,6 +480,7 @@ menuitem > menu > menuitem.hover > menu > menuitem{
     background-color: greenyellow;
     color: black;
     box-shadow: 0px 0px 20px 10px greenyellow;
+    outline: none;
 }
 .cardlist:hover .card-button {
     transform: translate(-50%, -10%);

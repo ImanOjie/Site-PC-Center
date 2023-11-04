@@ -49,7 +49,7 @@
 
                                 <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
 
-                                <menuitem><a href="{{route('cpu')}}" class="menuitem deep1">پردازنده</a></menuitem>
+                                <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
 
                                 <menuitem><a href="" class="menuitem deep1">حافظه رم</a></menuitem>
                                 <menuitem><a href="" class="menuitem deep1">فن خنک کننده</a></menuitem>

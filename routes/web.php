@@ -28,10 +28,8 @@ Route::post('/login',[App\Http\Controllers\UserController::class,'login'])->name
 Route::get('/motherboard',[App\Http\Controllers\HomeController::class,'motherboard'])->name('motherboard');
 Route::get('/graphic',[App\Http\Controllers\HomeController::class,'graphic'])->name('graphic');
 
-//menu
-Route::get('/motherboard',[App\Http\Controllers\HomeController::class,'motherboard'])->name('motherboard');
-Route::get('/graphic',[App\Http\Controllers\HomeController::class,'graphic'])->name('graphic');
-Route::get('/cpu',[App\Http\Controllers\HomeController::class,'cpu'])->name('cpu');
+//products-page
+Route::get('/product/{id}',[App\Http\Controllers\HomeController::class,'products_page'])->name('products_page');
 
 
 

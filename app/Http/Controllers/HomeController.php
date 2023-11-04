@@ -27,6 +27,14 @@ class HomeController extends Controller
         return view('/pages/purchases', compact('page_title'));
     }
 
+    public function products_page($id){
+        $products = Products_Motherboard::where('id',$id)->get();
+        foreach($products as $item){
+            $item->image = 'data:image/jpeg;base64,' . base64_encode( $item->image);}
+        $page_title=$item->fullname;
+        return view('/pages/menu/products_page', compact('page_title','products','item'));
+    }
+
     public function motherboard(){
         $page_title='مادربرد';
         $products = Products_Motherboard::all();
@@ -35,7 +43,7 @@ class HomeController extends Controller
         return view('/pages/menu/products_list', compact('page_title','products','item'));
     }
     public function graphic(){
-        $page_title='مادربرد';
+        $page_title='گرافیک';
         $products = Products_Graphic::all();
         foreach($products as $item){
         $item->image = 'data:image/jpeg;base64,' . base64_encode( $item->image);}

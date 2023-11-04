@@ -3,7 +3,8 @@
 @section('home')
 
     <div class="text-center">
-        <h1>this is product page</h1>
+        <img src="{{$item->image }}" width="250px"/>
+        <p class="text-body">{{$item->category}} {{$item->brand}} مدل {{$item->fullname}}</p>
     </div>
 
 

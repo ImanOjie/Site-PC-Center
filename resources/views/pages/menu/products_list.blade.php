@@ -23,7 +23,7 @@
                     <div class="row">
                         <p class="text-price">{{number_format($item->price)}} تومان</p>
                     </div>
-                   <a href=""><button class="card-button">مشاهده محصول</button></a>
+                   <a href="{{route('products_page',['id'=>$item->id])}}"><button class="card-button">مشاهده محصول</button></a>
                </div>
            </div>
            @endforeach
