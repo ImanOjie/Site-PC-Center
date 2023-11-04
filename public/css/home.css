@@ -420,13 +420,13 @@ menuitem > menu > menuitem.hover > menu > menuitem{
 .products_list{
     border: 1px solid rgba(205, 205, 205, 0.52);
     border-radius: 8px;
-    box-shadow:1px 1px 10px 1px #BABABA;
+    box-shadow:1px 2px 10px 1px #BABABA;
 }
 
 .cardlist {
     width: 99%;
     height: 99%;
-    border-radius: 20px;
+    border-radius: 8px;
     background: white;
     position: relative;
     padding: 0.9rem;
@@ -473,8 +473,7 @@ menuitem > menu > menuitem.hover > menu > menuitem{
 
 /*Hover*/
 .cardlist:hover {
-    border-color: green;
-    box-shadow: 0 10px 18px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 1px 5px 20px 3px #00000081;
 }
 .card-button:hover{
     background-color: greenyellow;
