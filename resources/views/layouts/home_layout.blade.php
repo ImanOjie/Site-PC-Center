@@ -9,27 +9,27 @@
     <title>{{$page_title}}</title>
 </head>
 <body>
-<header class="container-fluid">
 {{--header navbar 1--}}
-<div class="row nav1">
-    <div class="col-2">
-        <a href="{{route('home')}}"><img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="130px" class="logo"></a>
+<header>
+    <div class="wrapper">
+        <div class="logo">
+            <a href="#"><img src="{{asset('shop_storage/pc-logo.png')}}" alt="pccenter-logo" width="170px"></a>
+        </div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#">صفحه اصلی</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#">تماس با ما</a></li>
+                    <li><a href="#">درباره ما</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="links-nav1">
+            <a href=""><button class="item_nav_link1">9903989716(+98)<img src="{{asset('shop_storage/icon-call.png')}}" alt="icon-call" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
+            <a href=""><button class="item_nav_link2">pc_center@gmail.com<img src="{{asset('shop_storage/icon-email.png')}}" alt="icon-email" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
+        </div>
     </div>
-
-    <div class="col-5">
-        <div class="row" style="height: 30px"></div>
-        <a href="{{route('home')}}"><button href="{{route('home')}}" class="item_nav1" onclick="click()">صفحه اصلی</button></a>
-        <a href=""><button class="item_nav1">سوالات متداول</button></a>
-        <a href=""><button class="item_nav1">تماس با ما</button></a>
-        <a href=""><button class="item_nav1">درباره ما</button></a>
-    </div>
-    <div class="col-5">
-        <div class="row" style="height: 20px"></div>
-        <a href=""><button class="item_nav_link1">9903989716(+98)<img src="{{asset('/shop_storage/icon-call.png')}}" alt="icon-call" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
-        <br>
-        <a href=""><button class="item_nav_link2">pc_center@gmail.com<img src="{{asset('/shop_storage/icon-email.png')}}" alt="icon-email" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
-    </div>
-</div>
 </header>
 
 {{--header navbar 2--}}

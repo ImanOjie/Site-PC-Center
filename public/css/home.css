@@ -1,17 +1,21 @@
-html,body{
-    alignment: right;
-    background-color: white;
-    font-family: IRANSans;
-    color: #424242;
-    height: 100%;
-    line-height: 27px;
-    font-size: 16px;
-    direction: rtl;
-    margin: 0px;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    line-height: 1.5em;
 }
-body * {
-    margin:0;
-    padding:0;
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: IRANSans;
+    background-color: #f7f7f7;
+    direction: rtl;
 }
 .row,col{
     margin: 0;
@@ -20,49 +24,64 @@ body * {
 }
 
 /*navbar 1*/
-.nav1{
-
-    background-color: white ;
-    height: auto;
+header {
+    background-color: white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
 }
-
-.item_nav1{
-    border: none;
-    background-color: unset;
-    padding-left: 30px;
-    font-size: 15px;
+header .wrapper {
+    max-width: 1700px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.item_nav_link1{
-    border: none;
-    background-color: unset;
-}
-
-.item_nav_link2{
-    border: none;
-    background-color: unset;
-}
-
-.item_nav1:focus {
-    border: none;
-    outline: none;
-}
-
-.item_nav_link1:focus {
-    border: none;
-    outline: none;
-}
-
-.item_nav_link2:focus {
-    border: none;
-    outline: none;
-}
-
-.logo{
-    margin: 10px;
+header .logo img {
+    height: 100px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+}
+.navbar ul {
+    all: unset;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 45px;
+}
+.navbar ul a {
+    all: unset;
+    color: #444444;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 18px;!important;
+}
+.links-nav1{
+    display: flex;
+    flex-direction: column;
+}
+.item_nav_link1,
+.item_nav_link2{
+    background-color: unset;
+    border: none;
+    gap: 20px;
+}
+@media screen and (max-width: 950px){
+    div.links-nav1,
+    div.navbar{
+        display: none;
+    }
+    div.logo{
+        width: 150vm;
+        height: 100vm;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (min-width: 951px){
+    div.links-nav1{
+        font-size: 16px;!important;
+    }
 }
 
 /*navbar 2*/
