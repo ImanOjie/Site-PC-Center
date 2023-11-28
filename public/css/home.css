@@ -487,3 +487,22 @@ menuitem > menu > menuitem.hover > menu > menuitem{
     opacity: 1;
 }
 
+.row-product-image{
+    background-color: white;
+    height: 450px;
+    width: 80%;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid rgba(205, 205, 205, 0.52);
+    border-radius: 8px;
+    box-shadow:1px 2px 10px 2px #BABABA;
+}
+.col-image{
+    display: flex;
+    background-color: yellow;
+    height: 100%;
+    width: auto;
+}
+.col-image-info{
+    background-color: #9fcdff;
+}
