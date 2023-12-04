@@ -54,7 +54,7 @@ header .logo img {
     color: #444444;
     text-transform: uppercase;
     cursor: pointer;
-    font-size: 18px;!important;
+    font-size: 18px!important;
 }
 .links-nav1{
     display: flex;
@@ -80,7 +80,7 @@ header .logo img {
 }
 @media screen and (min-width: 951px){
     div.links-nav1{
-        font-size: 16px;!important;
+        font-size: 16px!important;
     }
 }
 
@@ -132,7 +132,7 @@ hr{
     margin: 0;
 }
 .arrow-menu{
-    float: left;!important;
+    float: left!important;
 }
 /* Links inside the dropdown */
 .dropdown-content1 a {
