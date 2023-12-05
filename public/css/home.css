@@ -28,21 +28,25 @@ header {
     background-color: white;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
     padding: 10px 20px;
+    z-index: 2;
 }
 header .wrapper {
-    max-width: 1700px;
+    background-color: white;
+    color: black;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
 }
 header .logo img {
     height: 100px;
     display: block;
 }
 .navbar ul {
-    all: unset;
+    color: black;
     list-style-type: none;
     display: flex;
     flex-direction: row;
@@ -50,7 +54,8 @@ header .logo img {
     gap: 45px;
 }
 .navbar ul a {
-    all: unset;
+    display: flex;
+    flex-direction: row;
     color: #444444;
     text-transform: uppercase;
     cursor: pointer;
@@ -78,132 +83,438 @@ header .logo img {
         margin-right: auto;
     }
 }
-@media screen and (min-width: 951px){
+@media screen and (min-width: 950px){
     div.links-nav1{
         font-size: 16px!important;
     }
 }
 
 /*navbar 2*/
-.nav2{
-    z-index: 2;
-    text-align: right;
-    height: 50px;
+
+.wrapper2 {
     background-color: #00B9F1;
     width: 100%;
-}
-
-.dropbtn {
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    position: relative;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
     z-index: 1;
-    background-color: #00B9F1;
-    color: white;
-    padding:11px 10px 10px 10px;
-    font-size: 16px;
-    border: none;
 }
-.dropbtn:focus {
-    border: none;
-    outline: none;
+.search,.sign-in,.basket{
+    text-align: center;
+    flex-wrap: nowrap;
 }
 
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    z-index: 2;
-    position: sticky;
+/*navbar2:hoverable menu*/
+
+.menu-bar {
+    position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content1 {
-    text-align: right;
-    color: #42425F;
-    font-size: 12px;
-    border: #00b9f1 solid 2px;
-    border-radius: 5px;
+.menu-hover i{
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+}
+.menu-hover {
+    border: none;
+    color: white;
+    background-color: #00B9F1;
+    width: auto;
+    height: 50px;
+    padding: 5px 10px 10px 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.menu-hover:hover
+,.menu-btn:hover,.items-hover:hover
+,.items-hover2:hover{
+    background: #00FF05;
+    color: green;
+}
+
+.hover-drop {
+    width: 270px;
+    color: white;
+    background-color: #00B9F1;
     display: none;
     position: absolute;
-    background-color: white;
-    width: auto;
-    box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 #00B9F1;
     z-index: 1;
+}
+.hover-drop2,.hover-drop3
+,.hover-drop4,.hover-drop5 {
+    width: 180px;
+    color: white;
+    background-color: #00B9F1;
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 #00B9F1;
+    z-index: 1;
+    top: 0;
+    right: 269px;
+}
+.hover-drop3{
+    top: 43px!important;
+    right: 270px!important;
+}
+.hover-drop4{
+    top: 86px!important;
+    right: 270px!important;
+}
+.hover-drop5{
+    top: 129px!important;
+    right: 270px!important;
+}
+button.items-hover,button.items-hover2 {
+    width: 100%;
+    text-align: right;
+    margin: 0;
+    display: block;
+    color: white;
+    background-color: #00B9F1;
+    padding: 10px 13px;
+    border: none;
+    border-top: 0.5px solid white;
+    border-right: 0.5px solid white;
+}
+.items-hover2 a{
+    width: auto;
+    text-decoration: none;
+    color: white;
+}
+.menu-bar:hover .hover-drop,
+.menu-bar2:hover .hover-drop2,
+.menu-bar2:hover .hover-drop3,
+.menu-bar2:hover .hover-drop4,
+.menu-bar2:hover .hover-drop5{
+    display: block;
+}
+
+/*navbar2:sidebar menu*/
+
+div.wrapper2 button.menu-btn{
+    padding: 0 20px 20px 10px;
+}
+div.wrapper2 button.menu-btn i{
+    font-size: 35px;
+    width: 45px;
+    height: 50px;
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    padding: 20px;
+    transition: left 0.3s;
+    z-index: 2;
+}
+.navbar.show {
+    left: 0 !important;
+    display: block;
+    padding: 20px 10px;
+    align-items: center;
+    background-image:
+        linear-gradient(135deg,black,#00B9F1,blue,#00B9F1
+        ,midnightblue,#00B9F1,black);
+}
+.hide-scroll {
+    overflow: hidden;
+}
+.close-nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.close-nav button.exit {
+    all: unset;
+    background-color: #FF9841;
+    font-size: 60px;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 20px 10px 20px;
+    border-radius: 10px;
+    color: black;
+}
+.sign-in-mobile button,
+.sign-in-mobile span {
+    all: unset;
+    background-color: greenyellow;
+    font-size: 19px;
+    font-weight: bolder;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+.sign-in-mobile a{
+    color: #508300;
+    text-decoration: none;
+}
+.sign-in-mobile a:hover{
+    color: #08a808;
+    font-weight: bolder;
+}
+.close-nav button.sign-in-mobile:hover {
+    color: greenyellow;
+    background: green;
+    box-shadow: 0 0 10px 2px green;
+    border-color: green;
+}
+
+.close-nav button.exit:hover {
+    color: rgba(255,54,0,0.98);
+    background: red;
+    box-shadow: 0 0 10px 2px red;
+    border-color: red;
+}
+
+.menu-btn{
+    display: inline-block;
+    z-index: 2;
+    background-color: #00B9F1;
+    color: white;
+    font-size: 14px;
+    height: 50px;
+    border: none;
+}
+.menu-btn i{
+    width: auto;
+    padding-left: 10px;
+}
+div.menuitem {
+    width: 100%;
+    height: auto;
+    all: unset;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    border-radius: 10px;
+    margin: 0;
     padding: 0;
 }
-hr{
-    margin: 0;
+.dropdown{
+    width: 90%;
+    padding-top: 15px;
 }
-.arrow-menu{
-    float: left!important;
+.dropdown .drop-btn {
+    background-color: #9fcdff;
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 15px 15px 5px 0;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 1px #00B9F1;
 }
-/* Links inside the dropdown */
-.dropdown-content1 a {
-    width: 300px;
+.drop-btn i{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0 20px 0 0;
+}
+.list-items{
+    display: none;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.list-items a {
+    width: 60%;
+    display: block;
+    all: unset;
     color: black;
-    padding: 8px 16px 8px 8px;
-    text-decoration: none;
-    display: inline-block;
-}
-
-
-
-
-
-
-
-
-
-/* Change color of dropdown links on hover */
-.dropdown-content1 a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content1 {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {background-color: #00B9F1;}
-
-.search-bar {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 25px;
+    background-color: #9fcdff;
+    padding: 7px;
+    letter-spacing: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.38);
+    border-radius: 10px;
+    box-shadow: 0 1px 10px 1px #00B9F1;
     margin-top: 5px;
 }
+button.drop-btn:hover {
+    background-color: #00B9F1;
+    text-decoration: none;
+}
+.list-items{
+    display: none;
+    position: relative;
+}
+.list-items a{
+    display: block;
+    text-decoration: none;
+    text-align: right;
+}
 
-.search-btn {
+/*navbar2:search*/
+
+.search form{
+    display: flex;
+    height: 50px;
+}
+.search input{
+    display: flex;
+    width: 35vw;
+    border-radius: 0 25px 25px 0;
+    font-size: 12px;
+    color: grey;
+    padding: 2px 20px;
+    border: none;
+    height: 34px;
+    margin-top: 7px;
+}
+.search button{
+    display: flex;
     color: white;
+    width: 60px;
     border-color: #00B9F1;
     background-color: #424242;
     border-style: solid;
-    border-radius: 20px 0px 0px 20px;
-    padding: 2px 25px 0px 25px;
+    border-radius: 20px 0 0 20px;
+    padding: 4px 17px 0 0;
+    height: 34px;
+    margin-top: 7px;
+    border-width: 0;
+}
+.search2 form{
+    display: none;
+    height: 50px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    margin-top: 50px;
+}
+.search2 input{
+    display: flex;
+    width: 100%;
     font-size: 12px;
+    color: grey;
+    padding: 2px 20px;
+    border: none;
+    height: 34px;
+}
+.search2 button{
+    display: flex;
+    color: white;
+    width: 60px;
+    border-color: #00B9F1;
+    background-color: #424242;
+    border-style: solid;
+    padding: 4px 17px 0 0;
+    height: 34px;
+    border-width: 0;
 }
 
-.form-control{
-    border-radius: 0px 25px 25px 0px;
-    font-size: 17px;
-    padding: 19px;
-}
+/*navbar2:sign-in & basket*/
 
-.login-btn {
+.sign-in button,
+.sign-in span {
+    display: flex;
     text-decoration: none;
     color: white;
     border: none;
     background-color: unset;
-    margin: 10px auto 0px auto;
-    font-size: 14px;
-}
-.login-btn:focus {
-    border: none;
-    outline: none;
-}
-
-.basket-btn{
     margin: 0;
+    font-size: 14px;
+    padding: 0;
+}
+.basket button{
+    display: flex;
+    margin: auto;
     padding: 0;
     border: #00B9F1;
     background-color: unset;
-
+    left: 100%;
 }
-.basket-btn:focus{
+.basket img{
+    padding: 2px;
+    margin-left: 20px;
+}
+.basket button, .menu button,.sign-in button,
+.search input, .search button,.search2 input,
+.search2 button, .dropdown button,
+.menu-bar button:focus{
     border: none;
     outline: none;
 }
+
+/*responsive screen*/
+
+@media (min-width: 850px) {
+    .navbar, .search2 {
+        display: flex;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .search2,div.navbar,
+    div.wrapper2 button.menu-btn{
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .sign-in,.sign-in span,.sign-in button,.menu-hover,
+    .menu-bar:hover .hover-drop{
+        display: none;
+    }
+}
+
+@media (max-width: 750px){
+    div.search{
+        display: none;
+    }
+    div.wrapper2{
+        box-shadow: none;
+    }
+    div.search2 form{
+        display: flex;
+    }
+    div.search2 form input,
+    div.search2 form button{
+        box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media (max-width: 600px){
+    div.search{
+        margin: 0 auto;
+    }
+    div.search input{
+        height: 30px;
+        margin-top: 10px;
+        font-size: 10px;
+    }
+    div.search button{
+        height: 30px;
+        margin-top: 10px;
+        padding: 2px 15px 0 0;
+    }
+}
+
+
+
+
+
+
+
 /*cards*/
 .card-link{
     position: relative;

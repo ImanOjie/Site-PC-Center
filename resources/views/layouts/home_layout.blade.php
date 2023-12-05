@@ -15,7 +15,7 @@
 <header>
     <div class="wrapper">
         <div class="logo">
-            <a href="#"><img src="{{asset('shop_storage/pc-logo.png')}}" alt="pccenter-logo" width="170px"></a>
+            <a href="{{route('home')}}"><img src="{{asset('shop_storage/pc-logo.png')}}" alt="pccenter-logo" width="170px"></a>
         </div>
         <div class="navbar">
             <nav>
@@ -35,97 +35,152 @@
 </header>
 
 {{--header navbar 2--}}
-{{--<div class="row nav2">
-    <div class="col-3">
-
-        <nav>
-            <menu>
-                <menuitem id="demo1">
-                    <button class="dropbtn"><img src="{{asset('/shop_storage/icon-dropdown.png')}}" alt="dropdown" width="22px" style="margin-left: 8px" >دسته بندی کالاها</button>
-                    <menu>
-                        <menuitem>
-                            <a class="menuitem">قطعات کامپیوتر و لوازم جانبی</a>
-                            <menu>
-                                <menuitem><a href="{{route('motherboard')}}" class="menuitem deep1">مادربرد</a></menuitem>
-                                <menuitem><a href="{{route('graphic')}}" class="menuitem deep1">کارت گرافیک</a></menuitem>
-
-                                <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
-
-                                <menuitem><a href="" class="menuitem deep1">پردازنده</a></menuitem>
-
-                                <menuitem><a href="" class="menuitem deep1">حافظه رم</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep1">فن خنک کننده</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep1">حافظه SSD</a></menuitem>
-                            </menu>
-                        </menuitem>
-                        <menuitem>
-                            <a class="menuitem">لپ تاپ و لوازم جانبی</a>
-                            <menu>
-                                <menuitem><a href="" class="menuitem">ایسوس ASUS</a></menuitem>
-                                <menuitem><a href="" class="menuitem">لنوو LENOVO</a></menuitem>
-                                <menuitem><a href="" class="menuitem">ام اس آی MSI</a></menuitem>
-                                <menuitem><a href="" class="menuitem">ایسر ACER</a></menuitem>
-                                <menuitem><a href="" class="menuitem">اچ پی HP</a></menuitem>
-                            </menu>
-                        </menuitem>
-                        <menuitem>
-                            <a class="menuitem">کامپیوتر های آماده</a>
-                            <menu>
-                                <menuitem><a href="" class="menuitem deep2">ALL IN ONE</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep2">GAMING PC</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep2">MINI PC</a></menuitem>
-
-                            </menu>
-                        </menuitem>
-                        <menuitem>
-                            <a class="menuitem">دستگاه های سیستم اداری</a>
-                            <menu>
-                                <menuitem><a href="" class="menuitem deep3">SCANNER</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep3">PRINTER</a></menuitem>
-                                <menuitem><a href="" class="menuitem deep3">پروژکتور</a></menuitem>
-                            </menu>
-                        </menuitem>
-                        <menuitem>
-
-                    </menu>
-                </menuitem>
-            </menu>
-        </nav>
 
 
+<div class="wrapper2">
+    <div class="menu-bar">
+        <button class="menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></button>
+        <button class="menu-hover"><i class="fa fa-bars" aria-hidden="true"></i>دسته بندی کالاها</button>
+        <div class="hover-drop" id="menu-hover">
+            <div class="menu-bar2">
+                <button class="items-hover">قطعات کامپیوتر و لوازم جانبی</button>
+                <div class="hover-drop2">
+                    <button class="items-hover2"><a href="{{route('motherboard')}}">مادربرد</a></button>
+                    <button class="items-hover2"><a href="{{route('graphic')}}">کارت گرافیک</a></button>
+                    <button class="items-hover2"><a href="">پردازنده</a></button>
+                    <button class="items-hover2"><a href="">حافظه رم</a></button>
+                    <button class="items-hover2"><a href="">مانیتور</a></button>
+                    <button class="items-hover2"><a href="">فن خنک کننده</a></button>
+                    <button class="items-hover2"><a href="">حافظه SSD</a></button>
+                </div>
+            </div>
+            <div class="menu-bar2">
+                <button class="items-hover hv1">لپ تاپ و لوازم جانبی</button>
+                <div class="hover-drop3">
+                    <button class="items-hover2"><a href="">ایسوس ASUS</a></button>
+                    <button class="items-hover2"><a href="">لنوو LENOVO</a></button>
+                    <button class="items-hover2"><a href="">ام اس آی MSI</a></button>
+                    <button class="items-hover2"><a href="">ایسر ACER</a></button>
+                    <button class="items-hover2"><a href="">اچ پی HP</a></button>
+                </div>
+            </div>
+            <div class="menu-bar2">
+                <button class="items-hover hv2">کامپیوتر های آماده</button>
+                <div class="hover-drop4">
+                    <button class="items-hover2"><a href="">ALL IN ONE</a></button>
+                    <button class="items-hover2"><a href="">GAMING PC</a></button>
+                    <button class="items-hover2"><a href="">MINI PC</a></button>
+                </div>
+            </div>
+            <div class="menu-bar2">
+                <button class="items-hover hv3">دستگاه های سیستم اداری</button>
+                <div class="hover-drop5">
+                    <button class="items-hover2"><a href="">SCANNER</a></button>
+                    <button class="items-hover2"><a href="">PRINTER</a></button>
+                    <button class="items-hover2"><a href="">پروژکتور</a></button>
+                </div>
+            </div>
 
+        </div>
     </div>
-    <div class="col-5">
-        <form class="d-flex search-bar" role="search">
-            <input class="form-control me-2 " type="search"  aria-label="Search">
-            <button class="btn search-btn" type="submit"><img src="{{asset('/shop_storage/icon-search.png')}}" alt="search-icon" width="20px"></button>
+
+    <div class="navbar">
+        <div class="close-nav">
+            <button class="sign-in-mobile">
+                @auth()
+                    <span>{{auth()->user()->name}}</span>
+
+                    <form action="{{route('logout')}}" method="post">
+                        @csrf
+                        <button>خروج از حساب</button>
+                    </form>
+                @endauth
+
+                @guest()
+                    <a href="{{route('login_register')}}"><button>ورود / ثبت نام</button></a>
+                @endguest
+            </button>
+            <button class="exit">×</button>
+        </div>
+        <div class="menuitem">
+            <div class="dropdown">
+                <button class="drop-btn" onclick="drop1()">قطعات کامپیوتر و لوازم جانبی<i class="fa fa-angle-double-left"></i></button>
+                <div class="list-items" id="list-items1">
+                    <a href="#" class="deep">مادربرد</a>
+                    <a href="#" class="deep">کارت گرافیک</a>
+                    <a href="#" class="deep">پردازنده</a>
+                    <a href="#" class="deep">حافظه رم</a>
+                    <a href="#" class="deep">فن خنک کننده</a>
+                    <a href="#" class="deep">حافظه SSD</a>
+                    <a href="#" class="deep">مانیتور</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-btn" onclick="drop2()">لپ تاپ و لوازم جانبی<i class="fa fa-angle-double-left"></i>
+                </button>
+                <div class="list-items" id="list-items2">
+                    <a href="#" class="deep">ایسوس ASUS</a>
+                    <a href="#" class="deep">لنوو LENOVO</a>
+                    <a href="#" class="deep">ام اس آی MSI</a>
+                    <a href="#" class="deep">ایسر ACER</a>
+                    <a href="#" class="deep">اچ پی HP</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-btn" onclick="drop3()">کامپیوتر های آماده<i class="fa fa-angle-double-left"></i>
+                </button>
+                <div class="list-items" id="list-items3">
+                    <a href="#" class="deep">ALL IN ONE</a>
+                    <a href="#" class="deep">GAMING PC</a>
+                    <a href="#" class="deep">MINI PC</a>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="drop-btn" onclick="drop4()">دستگاه های سیستم اداری<i
+                        class="fa fa-angle-double-left"></i></button>
+                <div class="list-items" id="list-items4">
+                    <a href="#" class="deep">SCANNER</a>
+                    <a href="#" class="deep">PRINTER</a>
+                    <a href="#" class="deep">پروژکتور</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search">
+        <form action="#">
+            <input type="text" placeholder="کلمه مورد نظر را وارد کنید">
+            <button type="submit"><img src="/shop_storage/icon-search.png" alt="" width="25px"></button>
         </form>
     </div>
-    <div class="col-3">
 
-            <div class="row login-div">
-                @auth()
-                <span class="login-name">{{auth()->user()->name}}</span>
+    <div class="sign-in">
+        @auth()
+            <span>{{auth()->user()->name}}</span>
 
-                <form action="{{route('logout')}}" method="post">
-                    @csrf
-                    <button class="logout_btn">خروج از حساب</button>
-                </form>
-                @endauth
-            </div>
-                @guest()
-                    <a href="{{route('login_register')}}"><button class="login-btn align-content-center">ورود / ثبت نام</button></a>
-                @endguest
-    </div>
-    <div class="col-1 text-center m-0 ">
-            <a href="{{route('purchases')}}"><button class="basket-btn"><img src="{{asset('/shop_storage/icon-shopping.png')}}" alt="basket" width="45px"></button></a>
+            <form action="{{route('logout')}}" method="post">
+                @csrf
+                <button>خروج از حساب</button>
+            </form>
+        @endauth
+
+        @guest()
+            <a href="{{route('login_register')}}"><button>ورود / ثبت نام</button></a>
+        @endguest
     </div>
 
-
-</div>--}}
-
-
-
+    <div class="basket">
+        <button>
+            <img src="/shop_storage/icon-shopping.png" alt="" width="40px">
+        </button>
+    </div>
+</div>
+<div class="search2">
+    <form action="#">
+        <input type="text" name="search" placeholder="کلمه مورد نظر را وارد کنید">
+        <button type="submit"><img src="/shop_storage/icon-search.png" alt="" width="25px"></button>
+    </form>
+</div>
 
 
 
