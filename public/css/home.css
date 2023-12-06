@@ -396,7 +396,7 @@ button.drop-btn:hover {
     text-decoration: none;
     text-align: right;
 }
-a.deep:focus {
+.list-items a.deep:focus {
     background-color: #00B9F1;
 }
 
