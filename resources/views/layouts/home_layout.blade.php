@@ -15,17 +15,17 @@
 <header>
     <div class="wrapper">
         <div class="logo">
-            <a href="{{route('home')}}"><img src="{{asset('shop_storage/pc-logo.png')}}" alt="pccenter-logo" width="170px"></a>
+            <a href="{{route('home')}}"><img src="{{asset('shop_storage/pc-logo.png')}}" alt="pccenter-logo" width="150px"></a>
         </div>
         <div class="navbar">
-            <nav>
+
                 <ul>
                     <li><a href="#">صفحه اصلی</a></li>
                     <li><a href="#">سوالات متداول</a></li>
                     <li><a href="#">تماس با ما</a></li>
                     <li><a href="#">درباره ما</a></li>
                 </ul>
-            </nav>
+
         </div>
         <div class="links-nav1">
             <a href=""><button class="item_nav_link1">9903989716(+98)<img src="{{asset('shop_storage/icon-call.png')}}" alt="icon-call" style="height: 20px;padding: 0px 8px 0px 0px"></button></a>
@@ -84,18 +84,16 @@
         </div>
     </div>
 
-    <div class="navbar">
+    <div class="sidebar">
         <div class="close-nav">
             <button class="sign-in-mobile">
                 @auth()
-                    <span>{{auth()->user()->name}}</span>
-
+                    <span><i class="fa fa-user-circle px-2" aria-hidden="true"></i>{{auth()->user()->name}}</span>
                     <form action="{{route('logout')}}" method="post">
                         @csrf
-                        <button>خروج از حساب</button>
+                        <button class="sign-out">خروج از حساب</button>
                     </form>
                 @endauth
-
                 @guest()
                     <a href="{{route('login_register')}}"><button>ورود / ثبت نام</button></a>
                 @endguest
@@ -156,16 +154,16 @@
 
     <div class="sign-in">
         @auth()
-            <span>{{auth()->user()->name}}</span>
+            <span><i class="fa fa-user-circle px-2" aria-hidden="true"></i>{{auth()->user()->name}}</span>
 
             <form action="{{route('logout')}}" method="post">
                 @csrf
-                <button>خروج از حساب</button>
+                <button class="sign-out">خروج از حساب</button>
             </form>
         @endauth
 
         @guest()
-            <a href="{{route('login_register')}}"><button>ورود / ثبت نام</button></a>
+            <a href="{{route('login_register')}}"><button class="sign-in-btn">ورود / ثبت نام</button></a>
         @endguest
     </div>
 
