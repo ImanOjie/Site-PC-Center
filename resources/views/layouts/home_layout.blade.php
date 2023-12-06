@@ -11,6 +11,7 @@
     <title>{{$page_title}}</title>
 </head>
 <body onload="loading()">
+
 {{--header navbar 1--}}
 
 <header>
@@ -36,7 +37,6 @@
 </header>
 
 {{--header navbar 2--}}
-
 
 <div class="wrapper2">
     <div class="menu-bar">
@@ -181,48 +181,41 @@
     </form>
 </div>
 
-
-
 @yield('home')
 
 {{--footer navbar1--}}
+
 <footer>
-<div class="row nav-footer">
-    <div class="col-6 nav-footer-icon">
-        <img src="{{asset('/shop_storage/join-icon.png')}}" alt="" width="50px">
-        <span>همین حالا به یکی از هزاران عضو پی سی سنتر بپیوندید تا از جدیدترین تخفیفات مطلع شوید</span>
+    <div class="row nav-footer">
+        <div class="col-6 nav-footer-icon">
+            <img src="{{asset('/shop_storage/join-icon.png')}}" alt="" width="50px">
+            <span>همین حالا به یکی از هزاران عضو پی سی سنتر بپیوندید تا از جدیدترین تخفیفات مطلع شوید</span>
+        </div>
+        <div class="col-6">
+            <form class="d-flex footer-form">
+                <input class="form-control me-2 footer-input" type="email" aria-label="mail"
+                       placeholder="ایمیل خود را وارد نمایید">
+                <button class="btn search-btn" type="submit">عضویت</button>
+            </form>
+        </div>
     </div>
-    <div class="col-6">
-        <form class="d-flex footer-form">
-            <input class="form-control me-2 footer-input" type="email"  aria-label="mail" placeholder="ایمیل خود را وارد نمایید">
-            <button class="btn search-btn" type="submit">عضویت</button>
-        </form>
-    </div>
-</div>
-
-
-
-
-
-
-
-
-
-
 
     <div class="footer">
 
-        {{--footer logo--}}
+{{--footer logo--}}
+
         <div class="row footer1">
             <div class="col-3">
                 <a href="{{route('home')}}">
-                    <img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="150px" class="logo footer-logo">
+                    <img src="{{asset('/shop_storage/pc-logo.png')}}" alt="pc-center-logo" width="150px"
+                         class="logo footer-logo">
                 </a>
             </div>
             <div class="col-9"></div>
         </div>
 
-        {{--footer call--}}
+{{--footer call--}}
+
         <div class="row footer2">
             <div class="col-3">
                 <img src="{{asset('/shop_storage/guidance-icon.png')}}" alt="guidance-icon" width="40px">
@@ -238,7 +231,8 @@
         </div>
         <hr>
 
-        {{--footer info about pc center--}}
+{{--footer info about pc center--}}
+
         <div class="row ">
             <div class="col-2 row-footer3">
                 <h3 class="footer3">خدمات مشتریان</h3>
@@ -266,7 +260,6 @@
             </div>
             <div class="col-4"></div>
         </div>
-
     </div>
     <div class="row footer-final">
         <span>این سایت فقط جهت نمونه کار می باشد</span>

@@ -225,7 +225,7 @@ div.sidebar {
     width: 100%;
     background-color: white;
     padding: 20px;
-    transition: left 0.3s;
+    transition: left 0.6s;
     z-index: 2;
     height: 920px;
     max-height: 920px;
