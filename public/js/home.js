@@ -1,4 +1,10 @@
 
+function loading(){
+    alert('این سایت فقط جنبه نمونه کار دارد');
+    alert('یک نکته : این سایت هم فرانت اند هم بک اند از صفر کدنویسی شده و از هیچ قالب یا نمونه ای استفاده نشده');
+}
+
+
 //navbar2 sidebar//
 
     const theBody = document.querySelector('body');

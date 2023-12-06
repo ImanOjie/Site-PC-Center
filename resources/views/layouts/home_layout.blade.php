@@ -10,8 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <title>{{$page_title}}</title>
 </head>
-<body>
+<body onload="loading()">
 {{--header navbar 1--}}
+
 <header>
     <div class="wrapper">
         <div class="logo">
