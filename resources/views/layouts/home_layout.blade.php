@@ -104,8 +104,8 @@
             <div class="dropdown">
                 <button class="drop-btn" onclick="drop1()">قطعات کامپیوتر و لوازم جانبی<i class="fa fa-angle-double-left"></i></button>
                 <div class="list-items" id="list-items1">
-                    <a href="#" class="deep">مادربرد</a>
-                    <a href="#" class="deep">کارت گرافیک</a>
+                    <a href="{{route('motherboard')}}" class="deep">مادربرد</a>
+                    <a href="{{route('graphic')}}" class="deep">کارت گرافیک</a>
                     <a href="#" class="deep">پردازنده</a>
                     <a href="#" class="deep">حافظه رم</a>
                     <a href="#" class="deep">فن خنک کننده</a>
