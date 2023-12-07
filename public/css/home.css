@@ -770,6 +770,30 @@ div.form2{
     align-self: center;
 }
 
+/*footer about*/
+.about-us{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: right;
+    padding: 20px 80px 0 0;
+}
+.about-us div{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+.about-us div h5{
+    font-weight: 800;
+    text-shadow: 0 1px grey;
+    letter-spacing: -1.5px;
+}
+.about-us div a{
+    color: black;
+}
 
 @media (max-width: 750px) {
     .footer-logo {
@@ -786,6 +810,10 @@ div.form2{
     }
     div.calling img{
         margin-right: 0;
+    }
+    div.about-us{
+        justify-content: center;
+        padding: 20px 0 0 0;
     }
 }
 .footer-final{

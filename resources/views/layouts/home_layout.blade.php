@@ -182,6 +182,8 @@
 @yield("home")
 
 <footer>
+
+
     {{--footer navbar1--}}
     <div class="nav-footer">
         <div class="text">
@@ -200,45 +202,47 @@
         </form>
     </div>
 
-    <div class="footer">
-
-        {{--footer logo--}}
-
+    {{--footer logo--}}
     <div class="footer-logo">
             <img src="{{asset('shop_storage/pc-logo.png')}}" alt="">
         </div>
 
-        {{--footer call--}}
-
-        <div class="calling">
+    {{--footer call--}}
+    <div class="calling">
             <img src="{{asset('/shop_storage/guidance-icon.png')}}" alt="guidance-icon" width="40px">
             <span>نیاز به مشاوره دارید؟</span>
             <span>09903989716</span>
         </div>
 
-{{--footer info about pc center--}}
-
-        <div class="row ">
-            <div class="col-2 row-footer3">
-                <h3 class="footer3">خدمات مشتریان</h3>
-                <a href="" class="end-links">حساب من</a>
-                <a href="" class="end-links">پرسش های متداول</a>
-                <a href="" class="end-links">نظرسنجی</a>
-            </div>
-            <div class="col-2 row-footer3">
-                <h3 class="footer3">همراه پی سی سنتر</h3>
-                <a href="" class="end-links">تماس با ما</a>
-                <a href="" class="end-links">درباره ما</a>
-                <a href="" class="end-links">استخدام</a>
-            </div>
-            <div class="col-4"></div>
+    {{--footer about--}}
+    <div class="about-us">
+        <div>
+            <h5>خدمات مشتریان</h5>
+            <a href="#">حساب من</a>
+            <a href="#">پرسش های متداول</a>
+            <a href="#">نظرسنجی</a>
+        </div>
+        <div>
+            <h5>همراه پی سی سنتر</h5>
+            <a href="#">تماس با ما</a>
+            <a href="#">درباره ما</a>
+        </div>
+        <div>
+            <h5>راهنمای خرید</h5>
+            <a href="#">آموزش ثبت سفارش</a>
+            <a href="#">قوانین و شرایط استفاده</a>
+        </div>
+        <div>
+            <h5>خدمات پی سی سنتر</h5>
+            <a href="#">اسمبل</a>
+            <a href="#">پیشنهاد ما</a>
         </div>
     </div>
     <div class="row footer-final">
         <span>این سایت فقط جهت نمونه کار می باشد</span>
     </div>
-
 </footer>
+
 
 
 <script src="{{asset('/js/jquery.js')}}"></script>
