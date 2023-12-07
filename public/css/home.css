@@ -760,19 +760,6 @@ div.form2{
     padding-top: 8px;
     font-size: 16px;
 }
-.footer-final{
-    display: block;
-    color: #00ff25;
-    font-family: "Segoe Script";
-    font-weight: 1000;
-    font-style: normal;
-    font-size: 20px;
-    text-align: center;
-    background-color: #565656;
-    width: 100%;
-    height: 70px;
-    padding: 20px 0 20px 0;
-}
 .row-footer3{
     padding: 30px 30px 0 0;
     margin: 0;
@@ -795,132 +782,17 @@ div.form2{
     padding: 0;
     font-size: 12px;
 }
-.login-div{
-    color: white;
-    margin: 0;
-    padding: 0;
-
-}
-.logout_btn{
-    color: white;
-    border: none;
-    background-color: unset;
-    padding: 12px 10px 0 0;
-}
-.logout_btn:focus{
-    border: none;
-    outline: none;
-}
-.login-name{
-    padding: 12px 5px 0 0;
-}
-
-
-.first-title{
+.footer-final{
     display: block;
-    text-align: right;
-    margin: 10px 15px;
-    border: 1px solid rgba(205, 205, 205, 0.52);
-    border-radius: 8px;
-    box-shadow:0 5px 8px 0 #BABABA;
-    width: auto;
-    height: auto;
-    padding: 15px;
+    color: #00ff25;
+    font-family: "Segoe Script";
+    font-weight: 1000;
+    font-style: normal;
     font-size: 20px;
-}
-
-.page-row{
-    height:auto;
-    width: auto;
-    padding: 10px 0 20px 15px;
-}
-
-.products_list{
-    border: 1px solid rgba(205, 205, 205, 0.52);
-    border-radius: 8px;
-    box-shadow:1px 2px 10px 1px #BABABA;
-}
-
-.cardlist {
-    width: 99%;
-    height: 99%;
-    border-radius: 8px;
-    background: white;
-    position: relative;
-    padding: 0.9rem;
-    transition: 0.5s ease-out;
-    overflow: visible;
-}
-
-.card-button {
-    transform: translate(-50%, -100%);
-    width: 70%;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    background-color: green;
-    color: #fff;
-    font-size: 1.2rem;
-    font-weight: 600;
-    padding: 1.5rem 1rem;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    opacity: 0;
-    transition: 0.3s ease-out;
-}
-
-.text-body{
     text-align: center;
-    font-size: 2vh;
-    height: 30px;
-    padding: 2px 5px 5px 5px;
-}
-
-.text-price{
+    background-color: #565656;
     width: 100%;
-    display: block;
-    font-family: "2  Koodak";
-    font-size: 19px;
-    color: #70A744;
-    text-align: center;
-    padding-top: 55px;
-    margin-left: auto;
-    margin-right: auto;
-
+    height: 70px;
+    padding: 20px 0 20px 0;
 }
 
-/*Hover*/
-.cardlist:hover {
-    box-shadow: 1px 5px 20px 3px #00000081;
-}
-.card-button:hover{
-    background-color: greenyellow;
-    color: black;
-    box-shadow: 0 0 20px 10px greenyellow;
-    outline: none;
-}
-.cardlist:hover .card-button {
-    transform: translate(-50%, -10%);
-    opacity: 1;
-}
-
-.row-product-image{
-    background-color: white;
-    height: 450px;
-    width: 80%;
-    margin: 20px;
-    padding: 10px;
-    border: 1px solid rgba(205, 205, 205, 0.52);
-    border-radius: 8px;
-    box-shadow:1px 2px 10px 2px #BABABA;
-}
-.col-image{
-    display: flex;
-    background-color: yellow;
-    height: 100%;
-    width: auto;
-}
-.col-image-info{
-    background-color: #9fcdff;
-}

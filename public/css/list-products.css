@@ -1,0 +1,88 @@
+.first-title{
+    display: block;
+    text-align: right;
+    margin: 10px 15px;
+    border: 1px solid rgba(205, 205, 205, 0.52);
+    border-radius: 8px;
+    box-shadow:0 5px 8px 0 #BABABA;
+    width: auto;
+    height: auto;
+    padding: 15px;
+    font-size: 20px;
+}
+
+.page-row{
+    height:auto;
+    width: auto;
+    padding: 10px 0 20px 15px;
+}
+
+.products_list{
+    border: 1px solid rgba(205, 205, 205, 0.52);
+    border-radius: 8px;
+    box-shadow:1px 2px 10px 1px #BABABA;
+}
+
+.cardlist {
+    width: 99%;
+    height: 99%;
+    border-radius: 8px;
+    background: white;
+    position: relative;
+    padding: 0.9rem;
+    transition: 0.5s ease-out;
+    overflow: visible;
+}
+
+.card-button {
+    transform: translate(-50%, -100%);
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: green;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1.5rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.text-body{
+    text-align: center;
+    font-size: 2vh;
+    height: 30px;
+    padding: 2px 5px 5px 5px;
+}
+
+.text-price{
+    width: 100%;
+    display: block;
+    font-family: "2  Koodak";
+    font-size: 19px;
+    color: #70A744;
+    text-align: center;
+    padding-top: 55px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/*Hover*/
+.cardlist:hover {
+    box-shadow: 1px 5px 20px 3px #00000081;
+}
+.card-button:hover{
+    background-color: greenyellow;
+    color: black;
+    box-shadow: 0 0 20px 10px greenyellow;
+    outline: none;
+}
+.cardlist:hover .card-button {
+    transform: translate(-50%, -10%);
+    opacity: 1;
+}
