@@ -182,8 +182,6 @@
 @yield("home")
 
 <footer>
-
-
     {{--footer navbar1--}}
     <div class="nav-footer">
         <div class="text">
@@ -238,7 +236,9 @@
             <a href="#">پیشنهاد ما</a>
         </div>
     </div>
-    <div class="row footer-final">
+
+    {{--final text--}}
+    <div class="final-footer-text">
         <span>این سایت فقط جهت نمونه کار می باشد</span>
     </div>
 </footer>
