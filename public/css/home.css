@@ -626,19 +626,120 @@ button.drop-btn:hover {
 
 /*footer*/
 .nav-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #00B9F1;
     height: 50px;
-    color: white;
-    font-size: 13px;
+    width: 100%;
+    flex-wrap: nowrap;
+    padding: 0;
 }
-.nav-footer-icon{
+.text{
+    display: flex;
+    flex-direction: row;
+}
+.text span{
+    width: 100%;
+    color: #ffffff;
+    display: block;
+    font-size: 14px;
+    align-self: center;
     text-align: right;
 }
-.footer-form{
-    padding-top: 5px;
-    width: 70%;
-    float: left;
+.text i{
+    color: #ffffff;
+    font-size: 30px;
+    padding: 0 10px;
+    max-height: 50px;
 }
+.nav-footer form{
+    display: flex;
+    align-self: center;
+    width: 500px;
+    padding: 0 10px;
+    flex-wrap: nowrap;
+}
+.nav-footer form input{
+    border-radius: 25px 0 25px 0;
+    margin: 0;
+    width: 100%;
+    font-size: 12px;
+    padding: 2px 17px;
+    border: none;
+    height: 35px;
+}
+.nav-footer form button{
+    background-color: #424242;
+    color: #ffffff;
+    border-radius: 25px 0 25px 0;
+    height: 35px;
+    font-size: 13px;
+    padding: 0 13px;
+    border: none;
+}
+div.form2{
+    display: flex;
+    width: 100%;
+}
+.form2 form{
+    display: none;
+    width: 100%;
+    box-shadow: 0 2px 10px 1px #d0d0d0;
+}
+.form2 form input{
+    width: 100%;
+    height: 35px;
+    border: none;
+    margin: 0;
+    text-align: right;
+    font-size: 14px;
+    padding: 0 25px;
+}
+.form2 form button{
+    height: 35px;
+    border: none;
+    margin: 0;
+    background-color: #424242;
+    color: #ffffff;
+    padding: 0 10px;
+}
+.nav-footer form input:focus,
+.nav-footer form button:focus,
+.form2 form input:focus,
+.form2 form button:focus{
+    border: none;
+    outline: none;
+}
+@media (max-width: 1159px) {
+    .text span{
+        color: #ffffff;
+        display: block;
+        font-size: 12px;
+        align-self: center;
+    }
+}
+@media (max-width: 1080px) {
+    .nav-footer form{
+        display: flex;
+        align-self: center;
+        width: 400px;
+        padding: 0 10px;
+        flex-wrap: nowrap;
+    }
+}
+@media (max-width: 975px) {
+    .form2 form{
+        display: flex;
+    }
+    .nav-footer form{
+        display: none;
+    }
+    .nav-footer .text{
+        width: 100%;
+    }
+}
+
 .footer{
     width: 100%;
     height: 420px;

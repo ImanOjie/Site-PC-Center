@@ -186,24 +186,26 @@
 {{--footer navbar1--}}
 
 <footer>
-    <div class="row nav-footer">
-        <div class="col-6 nav-footer-icon">
-            <img src="{{asset('/shop_storage/join-icon.png')}}" alt="" width="50px">
-            <span>همین حالا به یکی از هزاران عضو پی سی سنتر بپیوندید تا از جدیدترین تخفیفات مطلع شوید</span>
+    <div class="nav-footer">
+        <div class="text">
+            <i class="fa fa-user-plus" aria-hidden="true"></i>
+            <span>همین حالا به یکی از هزاران عضو پی سی سنتر بپیوندید تا از جدیدترین تخفیفات مطلع شوید.</span>
         </div>
-        <div class="col-6">
-            <form class="d-flex footer-form">
-                <input class="form-control me-2 footer-input" type="email" aria-label="mail"
-                       placeholder="ایمیل خود را وارد نمایید">
-                <button class="btn search-btn" type="submit">عضویت</button>
-            </form>
-        </div>
+        <form>
+            <input type="email" aria-label="mail" placeholder="ایمیل خود را وارد نمایید">
+            <button type="submit">عضویت</button>
+        </form>
+    </div>
+    <div class="form2">
+        <form>
+            <input type="email" aria-label="mail" placeholder="ایمیل خود را وارد نمایید">
+            <button type="submit">عضویت</button>
+        </form>
     </div>
 
+
     <div class="footer">
-
 {{--footer logo--}}
-
         <div class="row footer1">
             <div class="col-3">
                 <a href="{{route('home')}}">
