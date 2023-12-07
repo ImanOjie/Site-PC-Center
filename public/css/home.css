@@ -217,7 +217,7 @@ div.wrapper2 button.menu-btn i{
     width: 45px;
     height: 50px;
 }
-div.sidebar {
+div .sidebar {
     position: fixed;
     top: 0;
     left: 100%;

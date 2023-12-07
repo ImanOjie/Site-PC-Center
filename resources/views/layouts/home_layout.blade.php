@@ -219,7 +219,7 @@
         <div class="row footer2">
             <div class="col-3">
                 <img src="{{asset('/shop_storage/guidance-icon.png')}}" alt="guidance-icon" width="40px">
-                <span>نیاز به راهنمایی و مشاوره دارید؟</span>
+                <span>نیاز به راهنمایی دارید؟</span>
             </div>
             <div class="col-3 guidance-num">
                 <span>
@@ -241,22 +241,10 @@
                 <a href="" class="end-links">نظرسنجی</a>
             </div>
             <div class="col-2 row-footer3">
-                <h3 class="footer3">راهنمای خرید</h3>
-                <a href="" class="end-links">آموزش ثبت سفارش</a>
-                <a href="" class="end-links">قوانین و شرایط استفاده</a>
-                <a href="" class="end-links">نحوه ارسال</a>
-            </div>
-            <div class="col-2 row-footer3">
                 <h3 class="footer3">همراه پی سی سنتر</h3>
                 <a href="" class="end-links">تماس با ما</a>
                 <a href="" class="end-links">درباره ما</a>
                 <a href="" class="end-links">استخدام</a>
-            </div>
-            <div class="col-2 row-footer3">
-                <h3 class="footer3">خدمات پی سی سنتر</h3>
-                <a href="" class="end-links">اسمبل رایگان</a>
-                <a href="" class="end-links">سیستم های پیشنهادی</a>
-                <a href="" class="end-links">واریز به حساب</a>
             </div>
             <div class="col-4"></div>
         </div>
