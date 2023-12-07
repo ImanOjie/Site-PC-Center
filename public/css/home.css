@@ -413,7 +413,7 @@ button.drop-btn:hover {
 .search input{
     display: flex;
     width: 35vw;
-    border-radius: 0 25px 25px 0;
+    border-radius: 25px 0 25px 0;
     font-size: 12px;
     color: grey;
     padding: 2px 20px;
@@ -428,7 +428,7 @@ button.drop-btn:hover {
     border-color: #00B9F1;
     background-color: #424242;
     border-style: solid;
-    border-radius: 20px 0 0 20px;
+    border-radius: 25px 0 25px 0;
     padding: 4px 17px 0 0;
     height: 34px;
     margin-top: 7px;
