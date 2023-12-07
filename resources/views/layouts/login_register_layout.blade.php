@@ -12,9 +12,6 @@
 </head>
 <body>
 
-
-
-
 <div>
     @yield('login_register')
 </div>

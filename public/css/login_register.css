@@ -9,7 +9,6 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
 
 * {
@@ -63,12 +62,9 @@ button:active {
     transform: scale(0.95);
 }
 
-button:focus {
+button:focus,input:focus {
     outline: none;
 }
-input:focus {
-     outline: none;
- }
 
 button.ghost {
     font-size: 20px;
@@ -103,7 +99,7 @@ input {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 880px;
+    width: 1100px;
     max-width: 100%;
     min-height: 550px;
     margin-top: 80px;
@@ -259,4 +255,49 @@ footer i {
 footer a {
     color: #BAFF39;
     text-decoration: none;
+}
+@media (max-width:1170px ) {
+    div.container{
+        width: 1000px;
+    }
+}
+@media (max-width:1100px ) {
+    div.container{
+        width: 950px;
+    }
+}
+@media (max-width:1000px ) {
+    div.container{
+        width: 850px;
+    }
+}
+@media (max-width:920px ) {
+    div.container{
+        width: 780px;
+    }
+}
+@media (max-width:850px ) {
+    div.container{
+        width: 700px;
+    }
+}
+@media (max-width:780px ) {
+    div.container{
+        width: 650px;
+    }
+}
+@media (max-width:700px ) {
+    div.container{
+        width: 600px;
+    }
+}
+@media (max-width:650px ) {
+    div.container{
+        width: 500px;
+    }
+}
+@media (max-width:540px ) {
+    div.container{
+        width: 370px;
+    }
 }
