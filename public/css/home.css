@@ -751,6 +751,26 @@ div.form2{
     width: 150px;
     height: 100px;
 }
+
+/*footer calling*/
+.calling{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: right;
+    padding: 30px;
+    gap: 20px;
+}
+.calling img{
+    display: flex;
+    margin-right: 50px;
+}
+.calling span{
+    display: block;
+    align-self: center;
+}
+
+
 @media (max-width: 750px) {
     .footer-logo {
         justify-content: center;
@@ -760,9 +780,14 @@ div.form2{
         width: 220px;
         height: 140px;
     }
+    div.calling{
+        justify-content: center;
+        font-size: 13px;
+    }
+    div.calling img{
+        margin-right: 0;
+    }
 }
-
-
 .footer-final{
     display: block;
     color: #00ff25;

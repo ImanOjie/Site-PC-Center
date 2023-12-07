@@ -210,20 +210,11 @@
 
         {{--footer call--}}
 
-        <div class="row footer2">
-            <div class="col-3">
-                <img src="{{asset("/shop_storage/guidance-icon.png")}}" alt="guidance-icon" width="40px">
-                <span>نیاز به راهنمایی دارید؟</span>
-            </div>
-            <div class="col-3 guidance-num">
-                <span>
-                    09903989716
-                </span>
-            </div>
-            <div class="col-4"></div>
-            <div class="col-2"></div>
+        <div class="calling">
+            <img src="{{asset('/shop_storage/guidance-icon.png')}}" alt="guidance-icon" width="40px">
+            <span>نیاز به مشاوره دارید؟</span>
+            <span>09903989716</span>
         </div>
-        <hr>
 
 {{--footer info about pc center--}}
 
