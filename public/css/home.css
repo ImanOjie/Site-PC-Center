@@ -140,6 +140,7 @@ div.navbar{
     padding: 5px 10px 10px 10px;
     cursor: pointer;
     z-index: 2;
+    transition: all 0.1s;
 }
 .menu-hover:hover
 ,.menu-btn:hover,.items-hover:hover
@@ -597,31 +598,44 @@ button.drop-btn:hover {
     }
 }
 
-
-
-
-
-
-
 /*cards*/
 .card-link{
-    position: relative;
-    padding-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 1rem;
+    padding: 20px 10px;
 }
-.card{
-    width: 23%;
-    float: right;
-    border: white;
-    border-radius: 20px;
+.card-link a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
-.card:hover{
-    bottom: 15px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+.card-link img{
+    width: 100%;
+    display: block;
+    border-radius: 100px 0;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.card-link img:hover{
+    transform: rotate(-8deg) scale(0.9);
+    box-shadow: 0 4px 10px 1px grey;
+    z-index: 3;
 }
 
 /*big-card*/
-.big-card{
-    padding: 60px 0 60px 0;
+div.big-card{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px 10px;
+    justify-content: center;
+}
+.big-card img{
+    display: block;
+    width: 90vw;
+    height: 40vm;
+    padding: 10px;
+    border-radius: 250px 0;
 }
 
 /*footer*/
