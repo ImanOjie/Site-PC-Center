@@ -613,7 +613,7 @@ button.drop-btn:hover {
 .card-link img{
     width: 100%;
     display: block;
-    border-radius: 100px 0;
+    border-radius: 70px 0;
     transition: all 0.2s;
     cursor: pointer;
 }
@@ -635,7 +635,7 @@ div.big-card{
     width: 90vw;
     height: 40vm;
     padding: 10px;
-    border-radius: 250px 0;
+    border-radius: 100px 0;
 }
 
 /*footer*/
