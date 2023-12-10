@@ -848,6 +848,10 @@ button.previous{
         font-size: 11px;
         padding: 2px 12px;
     }
+    div.slideshow img{
+        width: 100%;
+        height: 180px;
+    }
 }
 
 /*cards*/

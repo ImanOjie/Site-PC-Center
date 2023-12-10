@@ -77,7 +77,7 @@ function showDivs(n) {
     x[slideIndex-1].style.display = "block";
 }
 
-/*automaric*/
+/*automatic slideshow*/
 
 var myIndex = 0;
 carousel();
