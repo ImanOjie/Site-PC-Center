@@ -4,7 +4,15 @@
 
 {{--carousal--}}
 
+<div class="slideshow">
 
+    <img class="mySlides" src="{{asset('shop_storage/carousel1.jpg')}}" style="width:100%">
+    <img class="mySlides" src="{{asset('shop_storage/carousel2.jpg')}}" style="width:100%">
+    <img class="mySlides" src="{{asset('shop_storage/carousel3.jpg')}}" style="width:100%">
+    <img class="mySlides" src="{{asset('shop_storage/carousel4.jpg')}}" style="width:100%">
+    <button class="previous" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="next" onclick="plusDivs(1)">&#10095;</button>
+</div>
 
 {{--card--}}
 <div class="card-link">
@@ -14,7 +22,7 @@
     <a href="#"><img src="{{asset('/shop_storage/card-link4.webp')}}" alt=""></a>
 </div>
 
-
+{{--bigcard--}}
 <div class="big-card">
     <img src="{{asset('/shop_storage/gif-card.gif')}}" alt="">
 </div>

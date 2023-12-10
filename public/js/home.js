@@ -4,9 +4,7 @@
     alert('یک نکته : این سایت هم فرانت هم بک از صفر کدنویسی شده و از هیچ قالبی استفاده نشده');
 }*/
 
-
 //navbar2 sidebar//
-
     const theBody = document.querySelector('body');
     const openNav = document.querySelector('.menu-bar button.menu-btn');
     const closeNav = document.querySelector('.close-nav button.exit');
@@ -25,9 +23,7 @@
         bodyScroll()
     }
 
-
 //side menu dropdowns//
-
     function drop1() {
         const click = document.getElementById("list-items1");
         if (click.style.display === "none") {
@@ -61,11 +57,39 @@
         }
     }
 
+/* home slideshow */
 
+var slideIndex = 1;
+showDivs(slideIndex);
 
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
 
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
 
+/*automaric*/
 
+var myIndex = 0;
+carousel();
 
-
-
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2500);
+}

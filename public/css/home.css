@@ -598,46 +598,6 @@ button.drop-btn:hover {
     }
 }
 
-/*cards*/
-.card-link{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
-    grid-gap: 1rem;
-    padding: 20px 10px;
-}
-.card-link a{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-.card-link img{
-    width: 100%;
-    display: block;
-    border-radius: 70px 0;
-    transition: all 0.2s;
-    cursor: pointer;
-}
-.card-link img:hover{
-    transform: rotate(-8deg) scale(0.9);
-    box-shadow: 0 4px 10px 1px grey;
-    z-index: 3;
-}
-
-/*big-card*/
-div.big-card{
-    display: flex;
-    flex-wrap: nowrap;
-    padding: 50px 10px;
-    justify-content: center;
-}
-.big-card img{
-    display: block;
-    width: 90vw;
-    height: 40vm;
-    padding: 10px;
-    border-radius: 100px 0;
-}
-
 /*footer*/
 .nav-footer{
     display: flex;
@@ -847,5 +807,85 @@ div.form2{
     font-size: 22px;
     color: #00ff25;
 }
+/* home contains */  /* home contains */  /* home contains */  /* home contains */  /* home contains */  /* home contains */
 
+/*slideshow*/
+div.slideshow{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+}
+button.next,
+button.previous{
+    position: absolute;
+    background-color: #00B9F1;
+    color: white;
+    font-size: 20px;
+    padding: 15px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+}
+button.next{
+    top: 45%;
+    left: 0%;
+}
+button.previous{
+    top: 45%;
+    right: 0%;
+}
+@media (max-width: 800px) {
+    button.next,
+    button.previous{
+        font-size: 15px;
+        padding: 9px 18px;
+    }
 
+}@media (max-width: 500px) {
+    button.next,
+    button.previous{
+        font-size: 11px;
+        padding: 2px 12px;
+    }
+}
+
+/*cards*/
+.card-link{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    grid-gap: 1rem;
+    padding: 30px 10px;
+}
+.card-link a{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.card-link img{
+    width: 100%;
+    display: block;
+    border-radius: 70px 0;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.card-link img:hover{
+    transform: rotate(-5deg)scale(1.1);
+    box-shadow: 0 4px 10px 1px grey;
+    z-index: 3;
+}
+
+/*big-card*/
+div.big-card{
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 50px 10px;
+    justify-content: center;
+}
+.big-card img{
+    display: block;
+    width: 90vw;
+    height: 40vm;
+    padding: 10px;
+    border-radius: 80px 0;
+}
